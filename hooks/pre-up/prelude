@@ -1,0 +1,5 @@
+#!/bin/sh
+
+if [ ! -e $HOME/.emacs.d ]; then
+  git clone https://github.com/bbatsov/prelude.git $HOME/.emacs.d
+fi
