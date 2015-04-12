@@ -1,0 +1,64 @@
+#! /bin/sh -x
+
+# Check for Homebrew,
+# Install if we don't have it
+if test ! $(which brew); then
+  echo "Installing homebrew..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+# Update homebrew recipes
+brew update
+
+# Tap casks for betas, etc
+brew tap caskroom/cask
+brew tap caskroom/versions
+brew tap homebrew/science
+
+binaries=(
+  axel
+  bash
+  brew-cask
+  coreutils
+  leiningen
+  elixir
+  erlang
+  findutils
+  fish
+  gcc
+  git
+  gnutls
+  hub
+  htop
+  imagemagick
+  node
+  parallel
+  phantomjs
+  postgresql
+  python
+  python3
+  r
+  rbenv
+  readline
+  reattach-to-user-namespace
+  redis
+  ruby-build
+  sbt
+  scala
+  sqlite
+  the_silver_searcher
+  tig
+  tmux
+  tree
+  vim
+  watch
+  wemux
+  wget
+  zsh
+)
+
+echo "installing binaries…"
+brew install ${binaries[@]}
+
+# Install emacs with its peculiarities
+brew install emacs --HEAD --use-git-head --cocoa --with-gnutls --with-imagemagick
