@@ -1,3 +1,4 @@
+set shell="/usr/local/bin/zsh"
 " Use Vim settings, rather then Vi settings. This setting must be as early as
 filetype plugin indent on
 
@@ -218,4 +219,3 @@ nmap <F2> ^y$:<C-R>"<CR>
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
-
