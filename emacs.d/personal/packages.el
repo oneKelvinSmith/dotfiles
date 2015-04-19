@@ -26,7 +26,7 @@
          ("C-<" . mc/mark-previous-like-this)
          ("C-c C-<" . mc/mark-all-like-this)))
 
-(use-package robe
+(use-package elixir-mode
   :ensure t)
 
 (use-package enh-ruby-mode
@@ -38,6 +38,9 @@
 (remove-hook 'enh-ruby-mode-hook 'erm-define-faces)
 
 (use-package rspec-mode
+  :ensure t)
+
+(use-package robe
   :ensure t)
 
 (use-package sass-mode

@@ -37,7 +37,6 @@ binaries=(
   postgresql
   python
   python3
-  r
   rbenv
   readline
   reattach-to-user-namespace
