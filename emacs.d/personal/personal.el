@@ -21,8 +21,7 @@
 (setq-default mac-option-modifier 'meta)
 
 (setq-default tab-width 2)
-(setq-default cursor-type 'bar)
-(setq-default whitespace-line-column 140)
+(setq-default cursor-type 'box)
 
 (provide 'personal)
 ;;; personal.el ends here

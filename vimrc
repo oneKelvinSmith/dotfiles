@@ -1,4 +1,3 @@
-set shell="/usr/local/bin/zsh"
 " Use Vim settings, rather then Vi settings. This setting must be as early as
 filetype plugin indent on
 
@@ -10,6 +9,8 @@ let mapleader = " "
 
 nnoremap / /\v
 vnoremap / /\v
+
+set shell=/usr/local/bin/zsh
 
 set runtimepath+=/Users/quintis/.vim/custom/mpc
 

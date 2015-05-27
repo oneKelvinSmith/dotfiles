@@ -5,6 +5,7 @@ apps=(
   alfred
   atom
   bartender
+  chefdk
   dropbox
   firefoxdeveloperedition
   flash
