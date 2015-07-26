@@ -13,14 +13,14 @@ brew update
 # Tap casks for betas, etc
 brew tap caskroom/cask
 brew tap caskroom/versions
-brew tap homebrew/science
+brew tap thoughtbot/formulae
+brew tap railwaycat/emacsmacport
 
 binaries=(
   axel
   bash
   brew-cask
   coreutils
-  leiningen
   elixir
   erlang
   findutils
@@ -36,14 +36,12 @@ binaries=(
   phantomjs
   postgresql
   python
-  python3
   rbenv
+  rcm
   readline
   reattach-to-user-namespace
   redis
   ruby-build
-  sbt
-  scala
   sqlite
   the_silver_searcher
   tig
@@ -60,4 +58,5 @@ echo "installing binaries…"
 brew install ${binaries[@]}
 
 # Install emacs with its peculiarities
-brew install emacs --HEAD --use-git-head --cocoa --with-gnutls --with-imagemagick
+# brew install emacs --HEAD --use-git-head --cocoa --with-gnutls --with-imagemagick
+brew install emacs-mac --with-spacemacs-icon

@@ -29,6 +29,9 @@
 (use-package elixir-mode
   :ensure t)
 
+(use-package rubocop
+  :ensure t)
+
 (use-package enh-ruby-mode
   :ensure t
   :mode ("\\.rb$" . enh-ruby-mode)

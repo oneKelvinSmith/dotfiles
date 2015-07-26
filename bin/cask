@@ -5,21 +5,15 @@ apps=(
   alfred
   atom
   bartender
-  chefdk
   dropbox
-  firefoxdeveloperedition
+  firefox
   flash
   flux
-  fuze
   gimp
   google-chrome
   heroku-toolbelt
-  intellij-idea
   iterm2
-  java
   keepingyouawake
-  mailbox
-  rubymine
   skype
   slack
   spectacle
@@ -27,15 +21,21 @@ apps=(
   vagrant
   virtualbox
   vlc
-  xquartz
 )
 
-excluded_apps=(
-  firefox
+other_apps=(
+  1password
+  chefdk
+  firefoxdeveloperedition
+  fuze
   libreoffice
+  java
+  mailbox
   adobe-reader
   textmate
   sublime-text3
+  rubymine
+  intellij-idea
 )
 
 mac_store_apps=(
