@@ -29,7 +29,7 @@ set -x PATH $HOME/.rbenv/shims $PATH
 set -x PATH $HOME/.rbenv/bin $PATH
 rbenv rehash >/dev/null ^&1
 
-# set -x EDITOR "emacsclient --alternate-editor '' --no-wait"
+set -x EDITOR "emacs"
 
 set -x LANG "en_US.UTF-8"
 set -x LC_ALL "en_US.UTF-8"
@@ -45,4 +45,3 @@ set -x PATH $HOME/.bin $PATH
 Theme "jacaetevha"
 
 Plugin "brew"
-# Plugin "emacs"

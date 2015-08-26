@@ -1,2 +1,2 @@
-SYMLINK_DIRS="test emacs.d oh-my-zsh oh-my-fish vim"
+SYMLINK_DIRS="oh-my-zsh oh-my-fish vim"
 EXCLUDES="README.md *:*emacs* emacs/*"
