@@ -38,6 +38,7 @@ binaries=(
     readline
     reattach-to-user-namespace
     redis
+    rename
     ruby-build
     sqlite
     the_silver_searcher

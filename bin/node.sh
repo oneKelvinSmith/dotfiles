@@ -5,10 +5,11 @@ if test ! $(which npm); then
     brew install node
 fi
 
-binaries = (
+modules=(
     babel-eslint
     cordova
     eslint
+    eslint-plugin-react
     gulp
     ionic
     ios-sim
@@ -17,4 +18,4 @@ binaries = (
 )
 
 echo "installing node packages…"
- ${binaries[@]}
+npm install -g ${modules[@]}

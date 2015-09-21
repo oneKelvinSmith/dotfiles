@@ -36,11 +36,15 @@ set -x LC_ALL "en_US.UTF-8"
 
 set -x PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
 set -x MANPATH /usr/local/opt/coreutils/libexec/gnuman $MANPATH
+set -x ANDROID_HOME /usr/local/opt/android-sdk
+
+set -x PATH $HOME/.bin $PATH
+
 if test -e $HOME/.dircolors
   sh (dircolors $HOME/.dircolors)
 end
 
-set -x PATH $HOME/.bin $PATH
+set fish_greeting ""
 
 Theme "jacaetevha"
 

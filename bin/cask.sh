@@ -13,6 +13,7 @@ apps=(
     gimp
     google-chrome
     heroku-toolbelt
+    intel-haxm
     iterm2
     java
     keepingyouawake
@@ -20,7 +21,6 @@ apps=(
     slack
     spectacle
     steam
-    utorrent
     vagrant
     virtualbox
     vlc
