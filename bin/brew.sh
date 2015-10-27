@@ -33,6 +33,7 @@ binaries=(
     phantomjs
     postgresql
     python
+    qt5
     rbenv
     rcm
     readline

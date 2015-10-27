@@ -17,6 +17,9 @@ apps=(
     iterm2
     java
     keepingyouawake
+    little-snitch
+    micro-snitch
+    rescuetime
     skype
     slack
     spectacle
@@ -31,6 +34,7 @@ other_apps=(
     chefdk
     firefoxdeveloperedition
     fuze
+    launchbar
     libreoffice
     mailbox
     adobe-reader
