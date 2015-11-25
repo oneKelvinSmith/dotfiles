@@ -13,11 +13,13 @@ brew tap thoughtbot/formulae
 brew tap railwaycat/emacsmacport
 
 binaries=(
-    android-sdk
     axel
     bash
     brew-cask
     coreutils
+    docker
+    docker-compose
+    docker-machine
     elixir
     erlang
     findutils
@@ -28,7 +30,8 @@ binaries=(
     hub
     htop
     imagemagick
-    node
+    mongodb
+    nvm
     parallel
     phantomjs
     postgresql

@@ -6,18 +6,22 @@ if test ! $(which npm); then
 fi
 
 modules=(
+    angular
     babel-eslint
-    cordova
     ember-cli
     eslint
-    eslint-config-airbnb
     eslint-plugin-react
     gulp
-    ionic
-    ios-sim
+    grunt-cli
     jest-cli
     js-beautify
     tern
+)
+
+other=(
+    cordova
+    ios-sim
+    ionic
 )
 
 echo "installing node packages…"

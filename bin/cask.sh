@@ -3,9 +3,9 @@
 apps=(
     1password
     alfred
-    android-studio
     atom
     bartender
+    battle-net
     dropbox
     firefox
     flash
@@ -13,7 +13,6 @@ apps=(
     gimp
     google-chrome
     heroku-toolbelt
-    intel-haxm
     iterm2
     java
     keepingyouawake
@@ -29,13 +28,15 @@ apps=(
     vlc
 )
 
-other_apps=(
+other=(
     1password
+    android-studio
     chefdk
     firefoxdeveloperedition
     fuze
     launchbar
     libreoffice
+    intel-haxm
     mailbox
     adobe-reader
     textmate
@@ -44,7 +45,7 @@ other_apps=(
     intellij-idea
 )
 
-mac_store_apps=(
+mac_store=(
     xcode
     evernote
     wunderlist

@@ -1,12 +1,18 @@
 {
-  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": ["react"],
+  "extends": "eslint:recommended",
   "env": {
-    "browser": true
+    "browser": true,
+    "node": true,
+    "es6": true
   },
-  "globals": {
-    "angular": true,
-    "moment" : true,
-    "cache"  : true
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "rules": {
+    "quotes": [2, "single"],
+    "max-len": [2, 80, 4]
   },
   "indent": 2
 }
