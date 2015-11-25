@@ -1,7 +1,7 @@
 {
   "parser": "babel-eslint",
   "plugins": ["react"],
-  "extends": "eslint:recommended",
+  "extends": "airbnb",
   "env": {
     "browser": true,
     "node": true,
@@ -11,8 +11,8 @@
     "modules": true
   },
   "rules": {
-    "quotes": [2, "single"],
-    "max-len": [2, 80, 4]
+    "semi": [2, "never"],
+    "max-len": [2, 80, 2, {"ignoreComments": true}]
   },
   "indent": 2
 }

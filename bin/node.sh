@@ -10,6 +10,7 @@ modules=(
     babel-eslint
     ember-cli
     eslint
+    eslint-config-airbnb
     eslint-plugin-react
     gulp
     grunt-cli
