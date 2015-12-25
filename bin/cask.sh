@@ -8,7 +8,6 @@ apps=(
     battle-net
     dropbox
     firefox
-    flash
     flux
     gimp
     google-chrome
