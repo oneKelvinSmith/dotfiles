@@ -51,6 +51,7 @@ binaries=(
     tree
     vim
     watch
+    watchman
     wemux
     wget
     zsh
