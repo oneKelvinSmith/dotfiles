@@ -3,15 +3,15 @@
 if test ! $(which rbenv); then
     echo "Installing ruby..."
     brew install rbenv
-    rbenv install 2.2.3
+    rbenv install 2.2.4
 fi
 
 gems=(
     pry
+    awesome_print
     tmuxinator
     rails
     rubocop
-    # ruby-lint
 )
 
 echo "Installing gems..."
