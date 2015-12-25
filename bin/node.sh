@@ -8,12 +8,17 @@ fi
 modules=(
     angular
     babel-eslint
+    bower
+    elm
+    elm-oracle
     ember-cli
     eslint
     eslint-config-airbnb
+    eslint-config-ember
     eslint-plugin-react
     gulp
     grunt-cli
+    phantomjs
     jest-cli
     js-beautify
     tern
