@@ -50,4 +50,5 @@ if test -e $HOME/.dircolors
   sh (dircolors $HOME/.dircolors)
 end
 
+# need to have nvm plugin installed via oh-my-fish
 nvm use stable --silent
