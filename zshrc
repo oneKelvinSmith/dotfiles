@@ -19,6 +19,10 @@ fpath=(~/.zsh/completion $fpath)
 if which hub > /dev/null; then eval "$(hub alias -s)"; fi
 if which rbenv > /dev/null; then eval "$(rbenv init - --no-rehash)"; fi
 
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh
+nvm use stable --silent
+
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"

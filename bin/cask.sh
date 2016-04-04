@@ -1,12 +1,12 @@
 #! /bin/sh -x
 
 apps=(
-    1password
     alfred
     atom
     bartender
     battle-net
     dropbox
+    elm-platform
     firefox
     flux
     gimp
@@ -17,10 +17,10 @@ apps=(
     keepingyouawake
     little-snitch
     micro-snitch
-    rescuetime
     skype
     slack
     spectacle
+    sonic-pi
     steam
     vagrant
     virtualbox

@@ -30,8 +30,8 @@ binaries=(
     hub
     htop
     imagemagick
+    ispell
     mongodb
-    nvm
     parallel
     phantomjs
     postgresql
@@ -55,6 +55,11 @@ binaries=(
     wemux
     wget
     zsh
+
+    # libs
+    sdl2
+    libogg
+    libvorbis
 )
 
 echo "installing binaries…"

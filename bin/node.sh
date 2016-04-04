@@ -1,16 +1,14 @@
 #! /bin/sh -x
 
 if test ! $(which npm); then
-    echo "Installing node..."
-    brew install node
+    echo "Please install node."
 fi
 
 modules=(
     angular
     babel-eslint
+    babel-preset-es2015
     bower
-    elm
-    elm-oracle
     ember-cli
     eslint
     eslint-config-airbnb
@@ -30,5 +28,5 @@ other=(
     ionic
 )
 
-echo "installing node packages…"
+echo "Installing node packages…"
 npm install -g ${modules[@]}
