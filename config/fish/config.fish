@@ -1,4 +1,4 @@
-set fish_path $HOME/.oh-my-fish
+set fish_greeting ""
 
 set fish_color_autosuggestion 75715E
 set fish_color_command A6E22E
@@ -21,33 +21,33 @@ set fish_color_status F92672
 set fish_color_user -o A6E22E
 set fish_color_valid_path --underline
 
-source $fish_path/oh-my-fish.fish
+set -gx EDITOR "emacs"
 
-source $HOME/.config/fish/functions/git/git-aliases.fish
+set -gx LANG "en_US.UTF-8"
+set -gx LC_ALL "en_US.UTF-8"
 
-set -x PATH $HOME/.rbenv/shims $PATH
-set -x PATH $HOME/.rbenv/bin $PATH
+set -gx PATH $HOME/.bin $PATH
+
+set -gx PATH $HOME/.rbenv/shims $PATH
+set -gx PATH $HOME/.rbenv/bin $PATH
 rbenv rehash >/dev/null ^&1
 
-set -x NVM_DIR $HOME/.nvm
+set -gx PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
+set -gx MANPATH /usr/local/opt/coreutils/libexec/gnuman $MANPATH
 
-set -x EDITOR "emacs"
+# Path to Oh My Fish install.
+set -gx OMF_PATH $HOME/.local/share/omf
 
-set -x LANG "en_US.UTF-8"
-set -x LC_ALL "en_US.UTF-8"
+# Customize Oh My Fish configuration path.
+#set -gx OMF_CONFIG /Users/kelvin/.config/omf
 
-set -x PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
-set -x MANPATH /usr/local/opt/coreutils/libexec/gnuman $MANPATH
-set -x ANDROID_HOME /usr/local/opt/android-sdk
+# Load oh-my-fish configuration.
+source $OMF_PATH/init.fish
 
-set -x PATH $HOME/.bin $PATH
+source $HOME/.config/fish/functions/git-aliases.fish
 
 if test -e $HOME/.dircolors
   sh (dircolors $HOME/.dircolors)
 end
 
-set fish_greeting ""
-
-Theme "jacaetevha"
-
-Plugin "brew"
+nvm use stable --silent
