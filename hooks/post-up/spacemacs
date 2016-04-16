@@ -1,4 +1,4 @@
-#!/bin/sh
+#! /bin/sh
 
 if [ ! -e $HOME/.emacs.d ]; then
   git clone https://github.com/syl20bnr/spacemacs.git $HOME/.emacs.d
