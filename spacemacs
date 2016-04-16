@@ -43,7 +43,8 @@ values."
            ruby-version-runner 'rbenv)
      ruby-on-rails
      shell-scripts
-     spell-checking
+     (spell-checking :variables
+                      spell-checking-enable-by-default nil)
      sql
      syntax-checking
      version-control
