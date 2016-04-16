@@ -68,3 +68,4 @@ brew install ${binaries[@]}
 # Install emacs with its peculiarities
 # brew install emacs --HEAD --use-git-head --cocoa --with-gnutls --with-imagemagick
 brew install emacs-mac --with-spacemacs-icon
+brew linkapps
