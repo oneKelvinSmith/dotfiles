@@ -4,6 +4,8 @@ if test ! $(which npm); then
     echo "Please install node."
 fi
 
+nvm use stable --silent
+
 modules=(
     angular
     babel-eslint
