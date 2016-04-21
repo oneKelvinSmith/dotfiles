@@ -31,6 +31,7 @@ binaries=(
     htop
     imagemagick
     ispell
+    leiningen
     mongodb
     parallel
     phantomjs
