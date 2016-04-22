@@ -32,6 +32,7 @@ values."
      erlang
      git
      javascript
+     html
      markdown
      ;; org
      ;; (shell :variables
