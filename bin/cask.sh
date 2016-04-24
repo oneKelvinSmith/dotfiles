@@ -25,6 +25,7 @@ apps=(
     vagrant
     virtualbox
     vlc
+    yacreader
 )
 
 other=(
