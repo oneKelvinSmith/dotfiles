@@ -30,19 +30,20 @@ apps=(
 
 other=(
     1password
+    mailbox
+    adobe-reader
     android-studio
     chefdk
     firefoxdeveloperedition
     fuze
+    intellij-idea
     launchbar
     libreoffice
     intel-haxm
-    mailbox
-    adobe-reader
-    textmate
-    sublime-text3
     rubymine
-    intellij-idea
+    spotify
+    sublime-text3
+    textmate
 )
 
 mac_store=(
