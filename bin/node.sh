@@ -13,7 +13,6 @@ modules=(
     bower
     ember-cli
     eslint
-    eslint-config-airbnb
     eslint-config-ember
     eslint-plugin-react
     gulp
@@ -28,6 +27,7 @@ other=(
     cordova
     ios-sim
     ionic
+    eslint-config-airbnb
 )
 
 echo "Installing node packages…"
