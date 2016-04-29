@@ -27,10 +27,12 @@ binaries=(
     gcc
     git
     gnutls
+    gpg
     hub
     htop
     imagemagick
     ispell
+    keybase
     leiningen
     mongodb
     parallel
