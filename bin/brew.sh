@@ -34,6 +34,7 @@ binaries=(
     ispell
     keybase
     leiningen
+    mysql
     mongodb
     parallel
     phantomjs
@@ -48,6 +49,7 @@ binaries=(
     rename
     ruby-build
     sqlite
+    sshuttle
     the_silver_searcher
     tig
     tmux
