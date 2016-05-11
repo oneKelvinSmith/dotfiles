@@ -22,9 +22,11 @@ binaries=(
     docker-machine
     elixir
     erlang
+    ffmpeg
     findutils
     fish
     gcc
+    gifsicle
     git
     gnutls
     gpg
@@ -34,6 +36,8 @@ binaries=(
     ispell
     keybase
     leiningen
+    libogg
+    libvorbis
     mysql
     mongodb
     parallel
@@ -48,6 +52,7 @@ binaries=(
     redis
     rename
     ruby-build
+    sdl2
     sqlite
     sshuttle
     the_silver_searcher
@@ -60,11 +65,6 @@ binaries=(
     wemux
     wget
     zsh
-
-    # libs
-    sdl2
-    libogg
-    libvorbis
 )
 
 echo "installing binaries…"
