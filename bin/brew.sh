@@ -20,6 +20,7 @@ binaries=(
     docker
     docker-compose
     docker-machine
+    elasticsearch
     elixir
     erlang
     ffmpeg
