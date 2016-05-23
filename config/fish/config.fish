@@ -29,7 +29,6 @@ set -gx LC_ALL "en_US.UTF-8"
 set -gx PATH $HOME/.bin $PATH
 
 set -gx PATH $HOME/.rbenv/shims $PATH
-set -gx PATH $HOME/.rbenv/bin $PATH
 rbenv rehash >/dev/null ^&1
 
 set -gx PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
@@ -39,10 +38,3 @@ set -gx OMF_PATH $HOME/.local/share/omf
 source $OMF_PATH/init.fish
 
 source $HOME/.config/fish/functions/git-aliases.fish
-
-if test -e $HOME/.dircolors
-  sh (dircolors $HOME/.dircolors)
-end
-
-# need to have nvm plugin installed via oh-my-fish
-# nvm use stable --silent
