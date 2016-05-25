@@ -14,6 +14,7 @@ apps=(
     heroku-toolbelt
     iterm2
     java
+    keepassx
     keepingyouawake
     little-snitch
     micro-snitch
