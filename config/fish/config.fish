@@ -37,4 +37,4 @@ set -gx MANPATH /usr/local/opt/coreutils/libexec/gnuman $MANPATH
 set -gx OMF_PATH $HOME/.local/share/omf
 source $OMF_PATH/init.fish
 
-source $HOME/.config/fish/functions/git-aliases.fish
+source $HOME/.config/fish/functions/git_aliases.fish
