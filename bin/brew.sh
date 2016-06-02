@@ -22,6 +22,7 @@ binaries=(
     elasticsearch
     elixir
     erlang
+    exercism
     ffmpeg
     findutils
     fish
