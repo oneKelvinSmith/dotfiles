@@ -14,6 +14,7 @@ modules=(
     babel-preset-es2015
     babel-preset-react
     brunch
+    elm-oracle
     jest-cli
     js-beautify
     phantomjs
