@@ -7,27 +7,35 @@ fi
 nvm use stable --silent
 
 modules=(
-    angular
+    babel-brunch
+    babel-core
     babel-eslint
+    babel-loader
     babel-preset-es2015
-    bower
-    ember-cli
-    eslint
-    eslint-config-ember
-    eslint-plugin-react
-    gulp
-    grunt-cli
-    phantomjs
+    babel-preset-react
+    brunch
     jest-cli
     js-beautify
+    phantomjs
+    react
+    react-dom
     tern
+    webpack
 )
 
 other=(
+    angular
+    bower
+    gulp
+    grunt-cli
     cordova
-    ios-sim
-    ionic
+    ember-cli
+    eslint
     eslint-config-airbnb
+    eslint-config-ember
+    eslint-plugin-react
+    ionic
+    ios-sim
 )
 
 echo "Installing node packages…"
