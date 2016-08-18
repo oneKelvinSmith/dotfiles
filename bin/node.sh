@@ -21,6 +21,7 @@ modules=(
     phantomjs
     react
     react-dom
+    standard
     tern
     webpack
 )
