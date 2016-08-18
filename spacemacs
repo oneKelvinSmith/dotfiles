@@ -50,6 +50,7 @@ values."
      sql
      syntax-checking
      version-control
+     vim-empty-lines
      yaml
      )
    ;; List of additional packages that will be installed without being
