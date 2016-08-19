@@ -17,6 +17,7 @@ modules=(
     brunch
     elm-brunch
     elm-oracle
+    eslint
     jest-cli
     js-beautify
     phantomjs
@@ -32,7 +33,6 @@ other=(
     bower
     cordova
     ember-cli
-    eslint
     eslint-config-airbnb
     eslint-config-ember
     grunt-cli
