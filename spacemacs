@@ -43,6 +43,7 @@ values."
      (ruby :variables
            ruby-test-runner 'rspec
            ruby-version-runner 'rbenv)
+     react
      ruby-on-rails
      shell-scripts
      (spell-checking :variables
