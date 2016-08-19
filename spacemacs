@@ -80,7 +80,7 @@ values."
    ;; This variable has no effect if Emacs is launched with the parameter
    ;; `--insecure' which forces the value of this variable to nil.
    ;; (default t)
-   dotspacemacs-elpa-https nil
+   dotspacemacs-elpa-https t
    ;; Maximum allowed time in seconds to contact an ELPA repository.
    dotspacemacs-elpa-timeout 5
    ;; If non nil then spacemacs will check for updates at startup
@@ -266,8 +266,7 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
-  (setq css-indent-offset 2
-        elm-indent-offset 2
+  (setq elm-indent-offset 2
         js-indent-level 2
         js2-basic-offset 2
         js2-indent-switch-body t
@@ -281,7 +280,8 @@ you should place your code here."
         web-mode-enable-auto-indentation t
         web-mode-indent-style 2
         web-mode-markup-indent-offset 2
-        web-mode-scss-indent-offset 2)
+        web-mode-scss-indent-offset 2
+        css-indent-offset 2)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
