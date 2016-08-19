@@ -11,7 +11,6 @@ apps=(
     flux
     gimp
     google-chrome
-    heroku-toolbelt
     iterm2
     java
     keepassx
@@ -21,8 +20,8 @@ apps=(
     screenhero
     skype
     slack
-    spectacle
     sonic-pi
+    spectacle
     steam
     vagrant
     virtualbox
@@ -32,16 +31,16 @@ apps=(
 
 other=(
     1password
-    mailbox
     adobe-reader
     android-studio
     chefdk
     firefoxdeveloperedition
     fuze
+    intel-haxm
     intellij-idea
     launchbar
     libreoffice
-    intel-haxm
+    mailbox
     rubymine
     spotify
     sublime-text3
