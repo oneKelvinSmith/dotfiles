@@ -13,6 +13,7 @@ modules=(
     babel-loader
     babel-preset-es2015
     babel-preset-react
+    eslint-plugin-react
     brunch
     elm-brunch
     elm-oracle
@@ -29,14 +30,13 @@ modules=(
 other=(
     angular
     bower
-    gulp
-    grunt-cli
     cordova
     ember-cli
     eslint
     eslint-config-airbnb
     eslint-config-ember
-    eslint-plugin-react
+    grunt-cli
+    gulp
     ionic
     ios-sim
 )
