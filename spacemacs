@@ -284,6 +284,8 @@ you should place your code here."
         web-mode-scss-indent-offset 2
         css-indent-offset 2)
   (push '("\\.js\\'" . react-mode) auto-mode-alist)
+  (with-eval-after-load 'flycheck
+    (flycheck-add-mode 'javascript-standard 'react-mode))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
