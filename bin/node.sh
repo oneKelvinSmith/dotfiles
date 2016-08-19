@@ -13,7 +13,12 @@ modules=(
     babel-loader
     babel-preset-es2015
     babel-preset-react
+    eslint-config-standard
+    eslint-config-standard-jsx
+    eslint-config-standard-react
+    eslint-plugin-promise
     eslint-plugin-react
+    eslint-plugin-standard
     brunch
     elm-brunch
     elm-oracle

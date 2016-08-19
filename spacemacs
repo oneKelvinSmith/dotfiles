@@ -283,6 +283,7 @@ you should place your code here."
         web-mode-markup-indent-offset 2
         web-mode-scss-indent-offset 2
         css-indent-offset 2)
+  (push '("\\.js\\'" . react-mode) auto-mode-alist)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
