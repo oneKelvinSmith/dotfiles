@@ -1,0 +1,8 @@
+# ~/.tmuxinator/me.yml
+
+name: me
+root: ~/Code/me
+
+windows:
+  - main: tig
+  - server: iex -S mix phoenix.server

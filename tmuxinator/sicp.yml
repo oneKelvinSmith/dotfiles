@@ -1,0 +1,7 @@
+# ~/.tmuxinator/sicp.yml
+
+name: sicp
+root: ~/Code/sicp 
+
+windows:
+  - main: tig

@@ -1,0 +1,9 @@
+# ~/.tmuxinator/intro.yml
+
+name: intro
+root: ~/Code/elm_intro
+
+windows:
+  - main: tig
+  - elm: cd web/elm
+  - server: iex -S mix phoenix.server
