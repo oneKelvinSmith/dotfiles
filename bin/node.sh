@@ -11,9 +11,9 @@ modules=(
     babel-core
     babel-eslint
     babel-loader
-    babel-loader
     babel-preset-es2015
     babel-preset-react
+    babel-register
     brunch
     elm-brunch
     elm-oracle
@@ -26,6 +26,7 @@ modules=(
     eslint-plugin-standard
     jest-cli
     js-beautify
+    mocha
     phantomjs
     react
     react-dom
