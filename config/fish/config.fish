@@ -28,8 +28,7 @@ set -gx LC_ALL "en_US.UTF-8"
 
 set -gx PATH $HOME/.bin $PATH
 
-set -gx PATH $HOME/.rbenv/shims $PATH
-rbenv rehash >/dev/null ^&1
+source ~/.asdf/asdf.fish
 
 set -gx PATH /usr/local/opt/coreutils/libexec/gnubin $PATH
 set -gx MANPATH /usr/local/opt/coreutils/libexec/gnuman $MANPATH

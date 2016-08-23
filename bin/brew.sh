@@ -20,8 +20,6 @@ binaries=(
     docker-compose
     docker-machine
     elasticsearch
-    elixir
-    erlang
     exercism
     ffmpeg
     findutils
@@ -31,30 +29,23 @@ binaries=(
     git
     gnutls
     gpg
-    hub
     htop
+    hub
     imagemagick
     ispell
     keybase
     leiningen
     libogg
     libvorbis
-    mysql
-    mongodb
     parallel
     phantomjs
-    postgresql
-    python
     qt5
-    rbenv
     rcm
     readline
     reattach-to-user-namespace
-    redis
     rename
     ruby-build
     sdl2
-    sqlite
     sshuttle
     the_silver_searcher
     tig

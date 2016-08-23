@@ -6,6 +6,9 @@ if [[ ! -d "$dir" ]]; then
 fi
 
 # install system binaries including rbenv & rcm
+. "$dir/asdf.sh"
+
+# install system binaries including rbenv & rcm
 . "$dir/brew.sh"
 
 # symlink dotfiles
