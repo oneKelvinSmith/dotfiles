@@ -30,6 +30,7 @@ modules=(
     phantomjs
     react
     react-dom
+    react-native-cli
     react-redux
     redux
     standard
