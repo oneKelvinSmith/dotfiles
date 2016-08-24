@@ -1,10 +1,9 @@
 #! /bin/sh -x
 
-if test ! $(which npm); then
+if test ! $(which asdf); then
     echo "Please install node."
+    asdf install nodejs 6.4.0
 fi
-
-nvm use stable --silent
 
 modules=(
     babel-brunch
@@ -14,6 +13,7 @@ modules=(
     babel-preset-es2015
     babel-preset-react
     babel-register
+    bower
     brunch
     elm-brunch
     elm-oracle
@@ -40,7 +40,6 @@ modules=(
 
 other=(
     angular
-    bower
     cordova
     ember-cli
     eslint-config-airbnb

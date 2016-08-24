@@ -1,13 +1,13 @@
 #! /bin/sh -x
 
-if test ! -d "$HOME/.asdf"; then
+if test ! -e $HOME/.asdf; then
     echo "Installing asdf..."
-    git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+    git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf
 fi
 
-if test ! -d "$HOME/.config/fish"; then
-    echo 'source ~/.asdf/asdf.fish' >> ~/.config/fish/config.fish
-    mkdir -p ~/.config/fish/completions; and cp ~/.asdf/completions/asdf.fish ~/.config/fish/completions
+if test ! -e $HOME/.config/fish/completions; then
+    mkdir -p $HOME/.config/fish/completions
+    cp $HOME/.asdf/completions/asdf.fish $HOME/.config/fish/completions
 fi
 
 $HOME/.asdf/bin/asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir

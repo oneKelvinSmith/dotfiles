@@ -1,17 +1,13 @@
 #! /bin/sh -x
 
-if test ! $(which rbenv); then
+if test $(which asdf); then
     echo "Installing ruby..."
-    brew install rbenv
-    rbenv install 2.3.0
-    rbenv global 2.3.0
-    rbenv rehash
+    asdf install ruby 2.3.1
 fi
 
 gems=(
     awesome_print
-    middleman
-    octopress
+    bundler
     pry
     rails
     rubocop
