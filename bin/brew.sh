@@ -9,6 +9,7 @@ brew update
 
 brew tap caskroom/cask
 brew tap caskroom/versions
+brew tap neovim/neovim
 brew tap thoughtbot/formulae
 
 binaries=(
@@ -24,6 +25,7 @@ binaries=(
     ffmpeg
     findutils
     fish
+    fzf
     gcc
     gifsicle
     git
@@ -37,6 +39,7 @@ binaries=(
     leiningen
     libogg
     libvorbis
+    neovim
     parallel
     phantomjs
     qt5
@@ -51,7 +54,6 @@ binaries=(
     tig
     tmux
     tree
-    vim
     watch
     watchman
     wemux

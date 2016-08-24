@@ -21,7 +21,7 @@ set fish_color_status F92672
 set fish_color_user -o A6E22E
 set fish_color_valid_path --underline
 
-set -gx EDITOR "vim"
+set -gx EDITOR "nvim"
 
 set -gx LANG "en_US.UTF-8"
 set -gx LC_ALL "en_US.UTF-8"
