@@ -1,7 +1,7 @@
 #! /bin/sh -x
 
 if test ! $(which asdf); then
-    echo "Please install node."
+    echo "Installing node..."
     asdf install nodejs 6.4.0
 fi
 
