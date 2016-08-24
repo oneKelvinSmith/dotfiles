@@ -41,7 +41,6 @@ binaries=(
     libvorbis
     neovim
     parallel
-    phantomjs
     qt5
     rcm
     readline
