@@ -40,14 +40,11 @@ values."
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
      osx
-     (ruby :variables
-           ruby-test-runner 'rspec
-           ruby-version-runner 'rbenv)
+     (ruby :variables ruby-test-runner 'rspec)
      react
      ruby-on-rails
      shell-scripts
-     (spell-checking :variables
-                      spell-checking-enable-by-default nil)
+     (spell-checking :variables spell-checking-enable-by-default nil)
      sql
      syntax-checking
      version-control
@@ -272,7 +269,7 @@ you should place your code here."
         js2-indent-switch-body t
         js2-mode-show-strict-warnings nil
         neo-theme 'ascii
-        powerline-default-separator 'slant
+        powerline-default-separator nil
         projectile-enable-caching t
         web-mode-attr-indent-offset 2
         web-mode-code-indent-offset 2
@@ -282,7 +279,6 @@ you should place your code here."
         web-mode-markup-indent-offset 2
         web-mode-scss-indent-offset 2
         css-indent-offset 2)
-  (push '("\\.js\\'" . react-mode) auto-mode-alist)
   (with-eval-after-load 'flycheck
     (flycheck-add-mode 'javascript-standard 'react-mode))
   )
