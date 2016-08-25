@@ -20,7 +20,6 @@ binaries=(
     docker
     docker-compose
     docker-machine
-    elasticsearch
     exercism
     ffmpeg
     findutils
