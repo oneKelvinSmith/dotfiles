@@ -41,6 +41,8 @@ binaries=(
     libvorbis
     neovim
     parallel
+    postgresql
+    python3
     qt5
     rcm
     readline
