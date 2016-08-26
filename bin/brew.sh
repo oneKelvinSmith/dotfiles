@@ -10,6 +10,7 @@ brew update
 brew tap caskroom/cask
 brew tap caskroom/versions
 brew tap neovim/neovim
+brew tap railwaycat/emacsmacport
 brew tap thoughtbot/formulae
 
 binaries=(
@@ -65,6 +66,13 @@ echo "installing binaries…"
 brew install ${binaries[@]}
 
 # Install emacs with its peculiarities
+#
+# GNU Emacs
 # brew install emacs --HEAD --use-git-head --with-cocoa --with-gnutls --with-librsvg --with-imagemagick
-brew install emacs --with-cocoa --with-gnutls --with-librsvg --with-imagemagick
+# brew install emacs --with-cocoa --with-gnutls --with-librsvg --with-imagemagick
+#
+# Emacs Mac Port
+brew install emacs-mac --HEAD --with-spacemacs-icon
+
+# Link brew applications
 brew linkapps
