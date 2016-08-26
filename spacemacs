@@ -121,7 +121,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Fira Mono"
+   dotspacemacs-default-font '("Fira Code"
                                :size 14
                                :weight normal
                                :width normal
@@ -269,7 +269,7 @@ you should place your code here."
         js2-indent-switch-body t
         js2-mode-show-strict-warnings nil
         neo-theme 'ascii
-        powerline-default-separator nil
+        powerline-default-separator 'slant
         projectile-enable-caching t
         web-mode-attr-indent-offset 2
         web-mode-code-indent-offset 2
