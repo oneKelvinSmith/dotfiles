@@ -17,10 +17,10 @@ apps=(
     keepingyouawake
     little-snitch
     micro-snitch
+    polymail
     screenhero
     skype
     slack
-    sonic-pi
     spectacle
     steam
     vagrant
@@ -43,6 +43,7 @@ other=(
     mailbox
     rubymine
     spotify
+    sonic-pi
     sublime-text3
     textmate
 )
