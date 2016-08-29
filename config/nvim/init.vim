@@ -34,8 +34,6 @@ colorscheme solarized
 let g:airline_theme="solarized"
 let g:airline_powerline_fonts=1
 
-let mapleader="\<SPACE>"
-
 set shiftwidth=2
 set tabstop=2
 
@@ -50,3 +48,57 @@ set ignorecase
 set smartcase
 set incsearch
 set magic
+
+let mapleader="\<SPACE>"
+
+imap fd <ESC>
+
+nnoremap <LEADER>qq :qa<CR>
+nnoremap <LEADER>qQ :qa!<CR>
+nnoremap <LEADER>qs :xa<CR>
+
+nnoremap <LEADER>ff :GitFiles<CR>
+nnoremap <LEADER>fF :Files<CR>
+nnoremap <LEADER>fr :History<CR>
+nnoremap <LEADER>fs :w<CR>
+nnoremap <LEADER>fS :wa<CR>
+
+nnoremap <LEADER>fed :e $MYVIMRC<CR>
+nnoremap <LEADER>feR :source $MYVIMRC<CR>
+
+nnoremap <LEADER>bb :buffers<CR>
+nnoremap <LEADER>bd :bdelete<CR>
+nnoremap <LEADER>bn :bn<CR>
+nnoremap <LEADER>bp :bp<CR>
+nnoremap <LEADER>bR :e<CR>
+
+nmap <LEADER><TAB> <C-^>
+
+nmap <LEADER>w- :sp<CR>
+nmap <LEADER>w/ :vsp<CR>
+nmap <LEADER>w= <C-W>=
+nmap <LEADER>wc :q<CR>
+nmap <LEADER>wh <C-W>h
+nmap <LEADER>wj <C-W>j
+nmap <LEADER>wk <C-W>k
+nmap <LEADER>wl <C-W>l
+nmap <LEADER>ws <C-W>s
+nmap <LEADER>wv <C-W>v
+nmap <LEADER>wm :MaximizerToggle<CR>
+nmap <LEADER>ww <C-W><C-W>
+
+nnoremap <LEADER>sa :Ag<CR>
+nnoremap <LEADER>sc :noh<CR>
+
+nmap <LEADER>;  <Plug>Commentary
+vmap <LEADER>;  <Plug>Commentary
+omap <LEADER>;  <Plug>Commentary
+nmap <LEADER>;; <Plug>CommentaryLine
+
+nnoremap <LEADER>gb :Gblame<CR>
+nnoremap <LEADER>gd :Gdiff<CR>
+nnoremap <LEADER>gs :Gstatus<CR>
+nnoremap <LEADER>gw :Gwrite<CR>
+nnoremap <LEADER>gp :Git push<CR>
+nnoremap <LEADER>gc :Gcommit<CR>
+nnoremap <LEADER>gt :GitGutterToggle<CR>
