@@ -269,7 +269,7 @@ you should place your code here."
         js2-indent-switch-body t
         js2-mode-show-strict-warnings nil
         neo-theme 'ascii
-        powerline-default-separator 'slant
+        powerline-default-separator 'utf-8
         projectile-enable-caching t
         web-mode-attr-indent-offset 2
         web-mode-code-indent-offset 2
