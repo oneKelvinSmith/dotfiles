@@ -40,6 +40,7 @@ set shiftwidth=2
 set tabstop=2
 
 set autoread
+set cursorline
 set expandtab
 set number
 set showmatch
