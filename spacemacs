@@ -280,8 +280,6 @@ you should place your code here."
         web-mode-scss-indent-offset 2
         css-indent-offset 2)
 
-  (mac-auto-operator-composition-mode)
-
   (with-eval-after-load 'flycheck
     (flycheck-add-mode 'javascript-standard 'react-mode))
   )
