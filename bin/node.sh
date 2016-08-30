@@ -11,6 +11,7 @@ modules=(
     babel-eslint
     babel-loader
     babel-preset-es2015
+    babel-preset-latest
     babel-preset-react
     babel-register
     bower
@@ -19,15 +20,15 @@ modules=(
     elm-brunch
     elm-oracle
     eslint
-    eslint babel-eslint 
+    eslint babel-eslint
     eslint-config-standard
     eslint-config-standard-jsx
     eslint-config-standard-react
     eslint-plugin-flowtype
-    eslint-plugin-import 
-    eslint-plugin-jsx-a11y 
+    eslint-plugin-import
+    eslint-plugin-jsx-a11y
     eslint-plugin-promise
-    eslint-plugin-react 
+    eslint-plugin-react
     eslint-plugin-standard
     jest-cli
     js-beautify
