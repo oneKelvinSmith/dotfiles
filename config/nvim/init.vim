@@ -31,12 +31,14 @@ call plug#end()
 set background=dark
 colorscheme solarized
 
-let g:airline_theme="solarized"
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
+let g:deoplete#enable_at_startup = 1
 
 set shiftwidth=2
 set tabstop=2
 
+set autoread
 set expandtab
 set number
 set showmatch
@@ -53,12 +55,16 @@ let mapleader="\<SPACE>"
 
 imap fd <ESC>
 
+inoremap <silent><expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <silent><expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
+
 nnoremap <LEADER>qq :qa<CR>
 nnoremap <LEADER>qQ :qa!<CR>
 nnoremap <LEADER>qs :xa<CR>
 
-nnoremap <LEADER>ff :GitFiles<CR>
 nnoremap <LEADER>fF :Files<CR>
+nnoremap <LEADER>ff :GitFiles<CR>
+nnoremap <LEADER>fg :GitFiles?<CR>
 nnoremap <LEADER>fr :History<CR>
 nnoremap <LEADER>fs :w<CR>
 nnoremap <LEADER>fS :wa<CR>
