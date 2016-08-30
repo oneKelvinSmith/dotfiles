@@ -39,7 +39,7 @@ let g:neomake_javascript_enabled_makers = ['standard']
 
 autocmd! BufWritePost * Neomake
 
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+let $FZF_DEFAULT_COMMAND = 'ag --hidden -g ""'
 
 set shiftwidth=2
 set tabstop=2
