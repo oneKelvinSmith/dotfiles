@@ -36,6 +36,8 @@ let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
 let g:deoplete#enable_at_startup = 1
 
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 set shiftwidth=2
 set tabstop=2
 
@@ -64,9 +66,12 @@ nnoremap <LEADER>qq :qa<CR>
 nnoremap <LEADER>qQ :qa!<CR>
 nnoremap <LEADER>qs :xa<CR>
 
-nnoremap <LEADER>fF :Files<CR>
-nnoremap <LEADER>ff :GitFiles<CR>
-nnoremap <LEADER>fg :GitFiles?<CR>
+nnoremap <LEADER>pf :Files<CR>
+
+nnoremap <LEADER>ff :Files<CR>
+nnoremap <LEADER>fF :Explore<CR>
+nnoremap <LEADER>fg :GitFiles<CR>
+nnoremap <LEADER>fG :GitFiles?<CR>
 nnoremap <LEADER>fr :History<CR>
 nnoremap <LEADER>fs :w<CR>
 nnoremap <LEADER>fS :wa<CR>
