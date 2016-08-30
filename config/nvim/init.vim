@@ -28,6 +28,7 @@ Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
+set termguicolors
 set background=dark
 colorscheme solarized
 
