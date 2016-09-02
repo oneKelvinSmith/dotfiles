@@ -1,8 +1,0 @@
-# ~/.tmuxinator/proe.yml
-
-name: proe
-root: ~/Code/proe
-
-windows:
-  - main: tig
-  - concurrency: cd concurrency
