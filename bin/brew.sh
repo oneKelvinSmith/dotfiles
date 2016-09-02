@@ -36,6 +36,7 @@ binaries=(
     ispell
     keybase
     leiningen
+    lfe
     libogg
     libvorbis
     neovim
