@@ -23,8 +23,10 @@ apps=(
     slack
     spectacle
     steam
+    unity
     vagrant
     virtualbox
+    visual-studio-code
     vlc
     yacreader
 )

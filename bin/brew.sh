@@ -39,6 +39,7 @@ binaries=(
     lfe
     libogg
     libvorbis
+    mono
     neovim
     parallel
     postgresql
