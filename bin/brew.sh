@@ -15,11 +15,11 @@ brew tap thoughtbot/formulae
 binaries=(
     axel
     bash
-    brew-cask
     coreutils
     docker
     docker-compose
     docker-machine
+    doxygen
     exercism
     ffmpeg
     findutils
@@ -45,7 +45,6 @@ binaries=(
     parallel
     postgresql
     python3
-    qt5
     rcm
     readline
     reattach-to-user-namespace
