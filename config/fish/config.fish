@@ -31,5 +31,4 @@ set -gx PATH $HOME/.bin $PATH
 set -gx OMF_PATH $HOME/.local/share/omf
 source $OMF_PATH/init.fish
 
-source $HOME/.config/fish/functions/git_aliases.fish
 source $HOME/.asdf/asdf.fish
