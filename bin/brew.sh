@@ -26,6 +26,7 @@ binaries=(
     fish
     fzf
     gifsicle
+    gettext
     git
     gnutls
     gpg
@@ -42,11 +43,16 @@ binaries=(
     neo4j
     neovim
     parallel
+    phantomjs
     postgresql
+    postgis
     python3
+    qt
+    rabbitmq
     rcm
     readline
     reattach-to-user-namespace
+    redis
     rename
     ruby-build
     sdl2
@@ -55,6 +61,7 @@ binaries=(
     tig
     tmux
     tree
+    v8
     watch
     watchman
     wemux
