@@ -25,7 +25,6 @@ binaries=(
     findutils
     fish
     fzf
-    gcc
     gifsicle
     git
     gnutls
