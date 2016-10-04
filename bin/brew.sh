@@ -20,6 +20,7 @@ binaries=(
     docker-compose
     docker-machine
     doxygen
+    elm
     exercism
     ffmpeg
     findutils

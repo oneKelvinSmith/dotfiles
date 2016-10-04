@@ -6,7 +6,6 @@ apps=(
     bartender
     battle-net
     dropbox
-    elm-platform
     firefox
     flux
     gimp
@@ -36,6 +35,7 @@ other=(
     adobe-reader
     android-studio
     chefdk
+    elm-platform
     firefoxdeveloperedition
     fuze
     intel-haxm
