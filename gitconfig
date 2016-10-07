@@ -12,6 +12,7 @@
 [alias]
 [core]
   editor = nvim
+	excludesfile = ~/.gitignore
 [credential]
 	helper = osxkeychain
 [filter "lfs"]
