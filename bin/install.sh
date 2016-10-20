@@ -5,10 +5,10 @@ if [[ ! -d "$dir" ]]; then
     dir="$PWD";
 fi
 
-# install system binaries including rbenv & rcm
+# install asdf
 . "$dir/asdf.sh"
 
-# install system binaries including rbenv & rcm
+# install system binaries including asdf & rcm
 . "$dir/brew.sh"
 
 # symlink dotfiles

@@ -32,9 +32,6 @@ set -g fish_user_paths /usr/local/sbin $fish_user_paths
 set -gx OMF_PATH $HOME/.local/share/omf
 source $OMF_PATH/init.fish
 
-# use patched version of qt until it is fixed on homebrew for Sierra
-# see https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit#macos-sierra-1012
-set -g fish_user_paths /Applications/Qt5.5.1/5.5/clang_64/bin $fish_user_paths
 # using Postgres.app for client work
 set -g fish_user_paths /Applications/Postgres.app/Contents/Versions/latest/bin $fish_user_paths
 

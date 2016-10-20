@@ -1,9 +1,7 @@
 #! /bin/sh -x
 
-if test $(which asdf); then
-    echo "Installing ruby..."
-    asdf install ruby 2.3.1
-fi
+echo "Installing ruby..."
+asdf install ruby 2.3.1
 
 gems=(
     awesome_print
@@ -12,10 +10,6 @@ gems=(
     rails
     rubocop
     tmuxinator
-
-    # gosu
-    gosu
-    chipmunk
 )
 
 echo "Installing gems..."

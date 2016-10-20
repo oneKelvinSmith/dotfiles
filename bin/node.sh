@@ -1,9 +1,7 @@
 #! /bin/sh -x
 
-if test ! $(which asdf); then
-    echo "Installing node..."
-    asdf install nodejs 6.4.0
-fi
+echo "Installing node..."
+asdf install nodejs 6.9.0
 
 modules=(
     babel-brunch

@@ -48,7 +48,7 @@ binaries=(
     postgresql
     postgis
     python3
-    qt
+    qt5
     rabbitmq
     rcm
     readline

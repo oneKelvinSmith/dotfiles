@@ -28,6 +28,7 @@ apps=(
     visual-studio-code
     vlc
     yacreader
+    zoomus
 )
 
 other=(
