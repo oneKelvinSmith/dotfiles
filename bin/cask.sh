@@ -5,6 +5,7 @@ apps=(
     atom
     bartender
     battle-net
+    dash
     dropbox
     firefox
     flux
