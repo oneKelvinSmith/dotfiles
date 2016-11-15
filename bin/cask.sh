@@ -23,6 +23,7 @@ apps=(
     slack
     spectacle
     steam
+    trailer
     unity
     vagrant
     virtualbox

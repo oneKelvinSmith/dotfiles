@@ -31,6 +31,7 @@ binaries=(
     git
     gnutls
     gpg
+    heroku
     htop
     hub
     imagemagick
@@ -47,6 +48,7 @@ binaries=(
     phantomjs
     postgresql
     postgis
+    pow
     python3
     qt5
     rabbitmq
