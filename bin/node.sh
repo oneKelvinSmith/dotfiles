@@ -1,7 +1,7 @@
 #! /bin/sh -x
 
 echo "Installing node..."
-asdf install nodejs 6.9.0
+asdf install nodejs 6.9.1
 
 modules=(
     babel-brunch
