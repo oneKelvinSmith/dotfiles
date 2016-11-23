@@ -16,6 +16,7 @@ binaries=(
     axel
     bash
     coreutils
+    ctags
     docker
     docker-compose
     docker-machine
