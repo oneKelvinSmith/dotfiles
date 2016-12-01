@@ -17,7 +17,6 @@ apps=(
     keepingyouawake
     little-snitch
     micro-snitch
-    polymail
     screenhero
     skype
     slack

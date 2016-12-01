@@ -32,7 +32,4 @@ set -g fish_user_paths /usr/local/sbin $fish_user_paths
 set -gx OMF_PATH $HOME/.local/share/omf
 source $OMF_PATH/init.fish
 
-# using Postgres.app for client work
-set -g fish_user_paths /Applications/Postgres.app/Contents/Versions/latest/bin $fish_user_paths
-
 source $HOME/.asdf/asdf.fish
