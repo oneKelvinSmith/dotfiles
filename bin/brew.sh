@@ -11,6 +11,7 @@ brew tap caskroom/cask
 brew tap caskroom/versions
 brew tap neovim/neovim
 brew tap thoughtbot/formulae
+brew tap puma/puma
 
 binaries=(
     axel
@@ -49,7 +50,7 @@ binaries=(
     phantomjs
     postgresql
     postgis
-    pow
+    puma-dev
     python3
     qt5
     rabbitmq
