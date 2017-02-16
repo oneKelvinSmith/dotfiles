@@ -26,8 +26,8 @@ set -gx EDITOR "nvim"
 set -gx LANG "en_US.UTF-8"
 set -gx LC_ALL "en_US.UTF-8"
 
-set -g fish_user_paths $HOME/.bin $fish_user_paths
 set -g fish_user_paths /usr/local/sbin $fish_user_paths
+set -g fish_user_paths $HOME/.bin $fish_user_paths
 
 set -gx OMF_PATH $HOME/.local/share/omf
 source $OMF_PATH/init.fish
