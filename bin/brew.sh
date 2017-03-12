@@ -43,7 +43,6 @@ binaries=(
     lfe
     libogg
     libvorbis
-    mono
     neo4j
     neovim
     parallel
