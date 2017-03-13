@@ -1,7 +1,7 @@
 #! /bin/sh -x
 
 echo "Installing ruby..."
-asdf install ruby 2.3.1
+asdf install ruby 2.4.0
 
 gems=(
     awesome_print
