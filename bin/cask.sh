@@ -11,6 +11,7 @@ apps=(
     flux
     gimp
     google-chrome
+    haskell-platform
     iterm2
     java
     keepassx
