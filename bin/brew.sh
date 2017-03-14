@@ -58,7 +58,6 @@ binaries=(
     reattach-to-user-namespace
     redis
     rename
-    rg
     ruby-build
     sdl2
     sshuttle
