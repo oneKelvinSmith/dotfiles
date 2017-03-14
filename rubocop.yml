@@ -2,3 +2,10 @@ Style/Documentation:
   Enabled: false
 Style/SpaceInLambdaLiteral:
   Enabled: false
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - '**/spec/**/*.rb'
+    - '**/*_spec.rb'
