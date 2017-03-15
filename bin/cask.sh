@@ -27,7 +27,6 @@ apps=(
     unity
     vagrant
     virtualbox
-    visual-studio-code
     vlc
     yacreader
     zoomus
@@ -50,6 +49,7 @@ other=(
     spotify
     sonic-pi
     sublime-text3
+    visual-studio-code
     textmate
 )
 
