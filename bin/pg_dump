@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-ARGS=()
-for var in "$@"; do
-  [ "$var" != '-i' ] && ARGS+=("$var")
-done
-/usr/local/bin/pg_dump "${ARGS[@]}"
