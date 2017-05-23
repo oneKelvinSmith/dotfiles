@@ -21,7 +21,6 @@ binaries=(
     docker
     docker-compose
     docker-machine
-    doxygen
     elm
     exercism
     ffmpeg
@@ -70,6 +69,7 @@ binaries=(
     watchman
     wemux
     wget
+    yarn
     zsh
 )
 
