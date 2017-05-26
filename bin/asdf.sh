@@ -11,6 +11,7 @@ if test ! -e $HOME/.config/fish/completions; then
 fi
 
 $HOME/.asdf/bin/asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir
+$HOME/.asdf/bin/asdf plugin-add elm    https://github.com/vic/asdf-elm.git
 $HOME/.asdf/bin/asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang
 $HOME/.asdf/bin/asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs
-$HOME/.asdf/bin/asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby
+$HOME/.asdf/bin/asdf plugin-add ruby   https://github.com/asdf-vm/asdf-ruby
