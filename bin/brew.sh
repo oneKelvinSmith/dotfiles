@@ -61,6 +61,7 @@ binaries=(
     sshuttle
     the_silver_searcher
     tig
+    tmate
     tmux
     tree
     v8
