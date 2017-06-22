@@ -1,3 +1,3 @@
 function git
-  hub $argv
+  /usr/local/bin/hub $argv
 end
