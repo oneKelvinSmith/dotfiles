@@ -31,14 +31,18 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     csv
+     shell-scripts
      elixir
      elm
      erlang
      haskell
      html
      javascript
+     react
      (ruby :variables
-           ruby-test-runner 'rspec)
+           ruby-test-runner 'rspec
+           ruby-enable-enh-ruby-mode nil)
      sql
      yaml
      ;; ----------------------------------------------------------------
@@ -46,7 +50,7 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ivy
+     helm
      auto-completion
      better-defaults
      emacs-lisp
@@ -343,6 +347,9 @@ you should place your code here."
         web-mode-markup-indent-offset 2
         web-mode-scss-indent-offset 2
         css-indent-offset 2)
+
+  (setq ruby-insert-encoding-magic-comment nil)
+  (setq enh-ruby-add-encoding-comment-on-save nil)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
