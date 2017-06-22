@@ -1,5 +1,6 @@
 elixir 1.4.2
-ruby 2.4.1
+elm 0.18.0
 erlang 19.2
 nodejs 7.10.0
-elm 0.18.0
+ruby 2.4.1
+rust 1.17.0
