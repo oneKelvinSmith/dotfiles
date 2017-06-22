@@ -18,6 +18,7 @@ apps=(
     keepingyouawake
     little-snitch
     micro-snitch
+    ngrok
     screenhero
     skype
     slack
