@@ -34,10 +34,11 @@ colorscheme monokai
 
 let g:airline_theme='dark'
 let g:airline_powerline_fonts=1
-let g:deoplete#enable_at_startup = 1
-let g:neomake_javascript_enabled_makers = ['standard']
+let g:deoplete#enable_at_startup=1
+let g:neomake_javascript_enabled_makers=['standard']
+let g:neomake_ruby_enabled_makers=['rubocop']
 
-let $FZF_DEFAULT_COMMAND = 'ag --hidden -g ""'
+let $FZF_DEFAULT_COMMAND='ag --hidden -g ""'
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 autocmd! BufWritePost * Neomake
