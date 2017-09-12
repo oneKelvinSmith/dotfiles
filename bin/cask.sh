@@ -27,9 +27,6 @@ apps=(
     steam
     trailer
     unity
-    vagrant
-    virtualbox
-    vlc
     yacreader
     zoomus
 )
@@ -51,6 +48,8 @@ other=(
     spotify
     sonic-pi
     sublime-text3
+    vagrant
+    virtualbox
     visual-studio-code
     textmate
 )
