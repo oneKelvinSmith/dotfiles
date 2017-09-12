@@ -1,7 +1,7 @@
 #! /bin/sh -x
 
 echo "Installing node..."
-asdf install nodejs 7.10.0
+asdf install nodejs 8.4.0
 
 modules=(
     babel-brunch
@@ -55,4 +55,4 @@ other=(
 )
 
 echo "Installing node packages…"
-yarn global add ${modules[@]}
+npm install -g ${modules[@]}

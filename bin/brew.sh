@@ -61,12 +61,10 @@ binaries=(
     tmate
     tmux
     tree
-    v8
     watch
     watchman
     wemux
     wget
-    yarn
     zsh
 )
 
