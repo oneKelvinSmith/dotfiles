@@ -6,6 +6,7 @@ apps=(
     bartender
     battle-net
     dash
+    docker
     dropbox
     firefox
     flux

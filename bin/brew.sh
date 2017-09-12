@@ -18,9 +18,6 @@ binaries=(
     bash
     coreutils
     ctags
-    docker
-    docker-compose
-    docker-machine
     exercism
     ffmpeg
     findutils
