@@ -57,6 +57,7 @@ binaries=(
     sdl2
     sshuttle
     the_silver_searcher
+    terraform
     tig
     tmate
     tmux
