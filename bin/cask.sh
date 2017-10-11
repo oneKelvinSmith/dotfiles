@@ -8,7 +8,7 @@ apps=(
     dash
     docker
     dropbox
-    firefox
+    firefoxdeveloperedition
     flux
     gimp
     google-chrome
@@ -37,7 +37,7 @@ other=(
     android-studio
     chefdk
     elm-platform
-    firefoxdeveloperedition
+    firefox
     fuze
     intel-haxm
     intellij-idea
