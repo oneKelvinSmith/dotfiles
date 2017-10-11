@@ -14,6 +14,7 @@ brew tap thoughtbot/formulae
 brew tap puma/puma
 
 binaries=(
+    awscli
     axel
     bash
     coreutils
