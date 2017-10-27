@@ -29,11 +29,11 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(docker
-     csv
-     shell-scripts
+   '(csv
+     docker
      elixir
      elm
+     emoji
      erlang
      haskell
      html
@@ -42,6 +42,8 @@ This function should only modify configuration layer settings."
      (ruby :variables
            ruby-test-runner 'rspec
            ruby-enable-enh-ruby-mode nil)
+     rust
+     shell-scripts
      sql
      yaml
      ;; ----------------------------------------------------------------
@@ -49,11 +51,11 @@ This function should only modify configuration layer settings."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     helm
      auto-completion
      better-defaults
      emacs-lisp
      git
+     helm
      markdown
      org
      (shell :variables
