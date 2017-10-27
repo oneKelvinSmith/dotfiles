@@ -27,6 +27,7 @@ apps=(
     spectacle
     steam
     trailer
+    tunnelbear
     unity
     yacreader
     zoomus
