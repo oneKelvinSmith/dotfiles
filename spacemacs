@@ -385,6 +385,8 @@ before packages are loaded."
   (setq ruby-insert-encoding-magic-comment nil)
   (setq enh-ruby-add-encoding-comment-on-save nil)
 
+  (define-key winum-keymap (kbd "C-q") 'holy-mode)
+
   (add-to-list 'auto-mode-alist '("\\.tf$" . terraform-mode))
   )
 
