@@ -39,7 +39,6 @@ binaries=(
     lfe
     libogg
     libvorbis
-    neo4j
     neovim
     parallel
     phantomjs
