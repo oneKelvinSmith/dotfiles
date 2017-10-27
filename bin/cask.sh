@@ -13,6 +13,7 @@ apps=(
     gimp
     google-chrome
     haskell-platform
+    intellij-idea-ce
     iterm2
     java
     keepassx
@@ -40,7 +41,6 @@ other=(
     firefox
     fuze
     intel-haxm
-    intellij-idea
     launchbar
     libreoffice
     mailbox
