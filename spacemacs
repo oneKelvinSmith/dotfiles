@@ -29,42 +29,50 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layer-path '()
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(csv
+   '(
+     auto-completion
+     csv
      docker
      elixir
      elm
+     emacs-lisp
      emoji
      erlang
+     git
      haskell
+     helm
      html
+     java
      javascript
+     markdown
+     markdown
+     org
+     python
      react
-     (ruby :variables
-           ruby-test-runner 'rspec
-           ruby-enable-enh-ruby-mode nil)
      rust
      shell-scripts
      sql
+     syntax-checking
+     version-control
      yaml
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
-     auto-completion
-     better-defaults
-     emacs-lisp
-     git
-     helm
-     markdown
-     org
+     ;; Configured layers
+     (ruby :variables
+           ruby-test-runner 'rspec
+           ruby-enable-enh-ruby-mode nil
+           ruby-highlight-debugger-keywords nil)
+     (scala :variables
+            scala-auto-start-ensime t)
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
      (spell-checking :variables
                      spell-checking-enable-by-default nil)
-     syntax-checking
-     version-control
+     ;; ----------------------------------------------------------------
+     ;; Example of useful layers you may want to use right away.
+     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
+     ;; <M-m f e R> (Emacs style) to install them.
+     ;; ----------------------------------------------------------------
+     ;; better-defaults
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -363,7 +371,10 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-  (setq elm-indent-offset 2
+  (setq css-indent-offset 2
+        elm-indent-offset 2
+        enh-ruby-add-encoding-comment-on-save nil
+        hcl-indent-level 2
         js-indent-level 2
         js2-basic-offset 2
         js2-indent-switch-body t
@@ -371,48 +382,25 @@ before packages are loaded."
         neo-theme 'ascii
         powerline-default-separator 'utf-8
         projectile-enable-caching t
+        ruby-insert-encoding-magic-comment nil
+        terraform-indent-level 2
         web-mode-attr-indent-offset 2
         web-mode-code-indent-offset 2
         web-mode-css-indent-offset 2
         web-mode-enable-auto-indentation t
         web-mode-indent-style 2
         web-mode-markup-indent-offset 2
-        web-mode-scss-indent-offset 2
-        css-indent-offset 2
-        hcl-indent-level 2
-        terraform-indent-level 2)
+        web-mode-scss-indent-offset 2)
 
-  (setq ruby-insert-encoding-magic-comment nil)
-  (setq enh-ruby-add-encoding-comment-on-save nil)
+  (setq-default flycheck-scalastylerc "~/.config/scala/scalastyle_config.xml")
 
   (define-key winum-keymap (kbd "C-q") 'holy-mode)
 
   (add-to-list 'auto-mode-alist '("\\.tf$" . terraform-mode))
+  (add-to-list 'custom-theme-load-path "~/Code/monokai-emacs/")
+
+  (load-theme 'monokai t)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
-(defun dotspacemacs/emacs-custom-settings ()
-  "Emacs custom settings.
-This is an auto-generated function, do not modify its content directly, use
-Emacs customize menu instead.
-This function is called at the very end of Spacemacs initialization."
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   (quote
-    ("da9e2b133adcb80a212ca8d2c5b1df8c5e912ef534d127081f1c12bb2bde0b40" default)))
- '(evil-want-Y-yank-to-eol nil)
- '(package-selected-packages
-   (quote
-    (terraform-mode hcl-mode tablist docker-tramp dockerfile-mode docker vimrc-mode dactyl-mode helm-gtags ggtags org-category-capture alert log4e powerline pcre2el spinner gntp markdown-mode skewer-mode json-snatcher json-reformat multiple-cursors js2-mode simple-httpd hydra htmlize parent-mode window-purpose imenu-list projectile request haml-mode gitignore-mode fringe-helper git-gutter+ git-gutter flyspell-correct pos-tip flx org-plus-contrib magit magit-popup git-commit with-editor smartparens iedit anzu evil goto-chg undo-tree highlight diminish flycheck web-completion-data dash-functional tern ghc haskell-mode inf-ruby f bind-map bind-key yasnippet packed s company dash elixir-mode pkg-info epl helm avy helm-core async auto-complete popup monokai-theme yaml-mode xterm-color ws-butler winum which-key web-mode web-beautify volatile-highlights vi-tilde-fringe uuidgen use-package unfill toc-org tagedit symon string-inflection sql-indent spaceline smeargle slim-mode shell-pop scss-mode sass-mode rvm ruby-tools ruby-test-mode ruby-refactor rubocop rspec-mode robe restart-emacs rbenv rake rainbow-delimiters pug-mode popwin persp-mode password-generator paradox orgit org-projectile org-present org-pomodoro org-download org-bullets org-brain open-junk-file ob-elixir neotree mwim multi-term move-text mmm-mode minitest markdown-toc magit-gitflow macrostep lorem-ipsum livid-mode linum-relative link-hint less-css-mode json-mode js2-refactor js-doc intero insert-shebang info+ indent-guide impatient-mode hungry-delete hlint-refactor hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-purpose helm-projectile helm-mode-manager helm-make helm-hoogle helm-gitignore helm-flx helm-descbinds helm-css-scss helm-company helm-c-yasnippet helm-ag haskell-snippets google-translate golden-ratio gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe git-gutter-fringe+ gh-md fuzzy flyspell-correct-helm flycheck-pos-tip flycheck-mix flycheck-haskell flycheck-elm flycheck-credo flycheck-bashate flx-ido fish-mode fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-org evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu eshell-z eshell-prompt-extras esh-help erlang emmet-mode elm-mode elisp-slime-nav editorconfig dumb-jump diff-hl define-word dante csv-mode company-web company-tern company-statistics company-shell company-ghci company-ghc company-cabal column-enforce-mode coffee-mode cmm-mode clean-aindent-mode chruby bundler browse-at-remote auto-yasnippet auto-highlight-symbol auto-dictionary auto-compile alchemist aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line ac-ispell))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-)
