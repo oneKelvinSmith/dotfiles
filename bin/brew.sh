@@ -63,6 +63,7 @@ binaries=(
     terraform
     thrift
     tig
+    tldr
     tmate
     tmux
     tree
@@ -76,11 +77,13 @@ binaries=(
 echo "installing binaries…"
 brew install ${binaries[@]}
 
+# Install gnu sed to replace osx sed
+brew install gnu-sed --with-default-names
+
 # Install emacs with its peculiarities
 #
 # GNU Emacs
-# brew install emacs --HEAD --use-git-head --with-cocoa --with-gnutls --with-librsvg --with-imagemagick
-brew install emacs --with-cocoa --with-gnutls --with-librsvg --with-imagemagick
+brew install emacs --with-gnutls --with-librsvg --with-imagemagick@6 --with-cocoa
 
 # Link brew applications
 brew linkapps
