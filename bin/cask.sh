@@ -27,8 +27,6 @@ apps=(
     steam
     trailer
     tunnelbear
-    unity
-    yacreader
     zoomus
 )
 
@@ -39,19 +37,21 @@ other=(
     chefdk
     elm-platform
     firefox
+    firefoxdeveloperedition
     fuze
     intel-haxm
     launchbar
     libreoffice
     mailbox
     rubymine
-    spotify
     sonic-pi
+    spotify
     sublime-text3
+    textmate
+    unity
     vagrant
     virtualbox
     visual-studio-code
-    textmate
 )
 
 mac_store=(
