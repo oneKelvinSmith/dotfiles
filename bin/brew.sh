@@ -34,6 +34,7 @@ binaries=(
     hub
     imagemagick
     ispell
+    kafka
     keybase
     leiningen
     lfe
@@ -54,10 +55,13 @@ binaries=(
     redis
     rename
     ruby-build
+    sbt
+    scalastyle
     sdl2
     sshuttle
     the_silver_searcher
     terraform
+    thrift
     tig
     tmate
     tmux

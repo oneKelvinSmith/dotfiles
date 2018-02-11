@@ -8,14 +8,13 @@ apps=(
     dash
     docker
     dropbox
-    firefoxdeveloperedition
     flux
     gimp
     google-chrome
     haskell-platform
     intellij-idea-ce
     iterm2
-    java
+    java8
     keepassx
     keepingyouawake
     little-snitch
