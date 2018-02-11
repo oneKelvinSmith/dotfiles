@@ -22,12 +22,14 @@ set fish_color_user -o A6E22E
 set fish_color_valid_path --underline
 
 set -gx EDITOR "nvim"
+set -gx COLORTERM "truecolor"
 
 set -gx LANG "en_US.UTF-8"
 set -gx LC_ALL "en_US.UTF-8"
 
 set -g fish_user_paths /usr/local/sbin $fish_user_paths
 set -g fish_user_paths $HOME/.bin $fish_user_paths
+set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
 
 set -gx OMF_PATH $HOME/.local/share/omf
 source $OMF_PATH/init.fish
