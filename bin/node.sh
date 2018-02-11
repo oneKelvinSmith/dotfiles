@@ -1,7 +1,7 @@
 #! /bin/sh -x
 
 echo "Installing node..."
-asdf install nodejs 8.4.0
+asdf install nodejs 9.2.0
 
 modules=(
     babel-brunch
@@ -12,9 +12,7 @@ modules=(
     babel-preset-latest
     babel-preset-react
     babel-register
-    bower
     brunch
-    create-react-app
     elm-brunch
     elm-oracle
     eslint
@@ -30,6 +28,7 @@ modules=(
     eslint-plugin-standard
     jest-cli
     js-beautify
+    jsonlint
     mocha
     phantomjs
     react
@@ -44,7 +43,9 @@ modules=(
 
 other=(
     angular
+    bower
     cordova
+    create-react-app
     ember-cli
     eslint-config-airbnb
     eslint-config-ember
