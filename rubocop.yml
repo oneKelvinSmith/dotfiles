@@ -2,7 +2,7 @@ AllCops:
   TargetRubyVersion: 2.2
 Style/Documentation:
   Enabled: false
-Style/SpaceInLambdaLiteral:
+Layout/SpaceInLambdaLiteral:
   Enabled: false
 Metrics/BlockLength:
   Enabled: true
