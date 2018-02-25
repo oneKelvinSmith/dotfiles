@@ -39,6 +39,7 @@ This function should only modify configuration layer settings."
      emoji
      erlang
      git
+     go
      haskell
      helm
      html

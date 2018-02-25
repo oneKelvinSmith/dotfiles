@@ -19,6 +19,7 @@ binaries=(
     bash
     coreutils
     ctags
+    dep
     exercism
     ffmpeg
     findutils
@@ -28,6 +29,7 @@ binaries=(
     gettext
     git
     gnutls
+    go
     gpg
     heroku
     htop
