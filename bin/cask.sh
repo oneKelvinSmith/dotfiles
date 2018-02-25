@@ -2,7 +2,6 @@
 
 apps=(
     alfred
-    atom
     bartender
     battle-net
     dash
@@ -27,6 +26,7 @@ apps=(
     steam
     trailer
     tunnelbear
+    visual-studio-code
     zoomus
 )
 
@@ -34,6 +34,7 @@ other=(
     1password
     adobe-reader
     android-studio
+    atom
     chefdk
     elm-platform
     firefox
@@ -51,7 +52,6 @@ other=(
     unity
     vagrant
     virtualbox
-    visual-studio-code
 )
 
 mac_store=(
