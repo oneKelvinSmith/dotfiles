@@ -51,6 +51,7 @@ This function should only modify configuration layer settings."
      python
      react
      rust
+     scala
      shell-scripts
      sql
      syntax-checking
@@ -61,8 +62,6 @@ This function should only modify configuration layer settings."
            ruby-test-runner 'rspec
            ruby-enable-enh-ruby-mode nil
            ruby-highlight-debugger-keywords nil)
-     (scala :variables
-            scala-auto-start-ensime t)
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
