@@ -1,7 +1,10 @@
 #! /bin/sh -x
 
+version=2.4.3
+
 echo "Installing ruby..."
-asdf install ruby 2.4.2
+asdf install ruby $version
+asdf global ruby $version
 
 gems=(
     awesome_print

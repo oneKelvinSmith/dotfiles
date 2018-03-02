@@ -1,7 +1,10 @@
 #! /bin/sh -x
 
+version=8.9.4
+
 echo "Installing node..."
-asdf install nodejs 9.2.0
+asdf install nodejs $version
+asdf global nodejs $version
 
 modules=(
     babel-brunch

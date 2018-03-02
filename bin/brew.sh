@@ -19,7 +19,6 @@ binaries=(
     bash
     coreutils
     ctags
-    dep
     exercism
     ffmpeg
     findutils
@@ -29,7 +28,6 @@ binaries=(
     gettext
     git
     gnutls
-    go
     gpg
     heroku
     htop
@@ -38,17 +36,13 @@ binaries=(
     ispell
     kafka
     keybase
-    leiningen
-    lfe
     libogg
     libvorbis
     neovim
     parallel
-    phantomjs
     postgresql
     postgis
     puma-dev
-    python3
     qt5
     rabbitmq
     rcm
@@ -57,8 +51,6 @@ binaries=(
     redis
     rename
     ruby-build
-    sbt
-    scalastyle
     sdl2
     sshuttle
     the_silver_searcher
