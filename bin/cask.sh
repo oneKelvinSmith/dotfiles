@@ -4,24 +4,26 @@ apps=(
     alfred
     bartender
     battle-net
+    charles  
     dash
+    discord-ptb    
     docker
     dropbox
     flux
     gimp
     google-chrome
-    haskell-platform
     intellij-idea-ce
-    iterm2
-    java8
-    keepassx
+    iterm2   
+    keepassx    
     keepingyouawake
-    little-snitch
-    micro-snitch
+    keybase      
+    little-snitch   
+    micro-snitch     
+    minikube  
     ngrok
-    screenhero
-    skype
-    slack
+    ngrok  
+    skype 
+    slack            
     spectacle
     steam
     trailer
