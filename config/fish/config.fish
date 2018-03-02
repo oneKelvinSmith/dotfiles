@@ -30,6 +30,7 @@ set -gx LC_ALL "en_US.UTF-8"
 set -gx CARGOPATH $HOME/.cargo
 set -gx GOPATH    $HOME/.go
 
+set -g fish_user_paths /usr/local/sbin $fish_user_paths
 set -g fish_user_paths $HOME/.bin      $fish_user_paths
 set -g fish_user_paths $CARGOPATH/bin  $fish_user_paths
 set -g fish_user_paths $GOPATH/bin     $fish_user_paths
