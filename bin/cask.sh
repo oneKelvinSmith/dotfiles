@@ -22,6 +22,7 @@ apps=(
     minikube  
     ngrok
     ngrok  
+    postman
     skype 
     slack            
     spectacle
