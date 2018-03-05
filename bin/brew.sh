@@ -51,6 +51,7 @@ binaries=(
     redis
     rename
     ruby-build
+    sbt
     sdl2
     sshuttle
     the_silver_searcher

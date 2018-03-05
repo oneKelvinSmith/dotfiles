@@ -24,7 +24,6 @@ asdf plugin-add java    https://github.com/skotchpine/asdf-java
 asdf plugin-add lfe     https://github.com/vic/asdf-lfe
 asdf plugin-add nodejs  https://github.com/asdf-vm/asdf-nodejs
 asdf plugin-add ruby    https://github.com/asdf-vm/asdf-ruby
-asdf plugin-add sbt     https://github.com/lerencao/asdf-sbt
 asdf plugin-add scala   https://github.com/mtatheonly/asdf-scala
 
 asdf plugin-update --all
