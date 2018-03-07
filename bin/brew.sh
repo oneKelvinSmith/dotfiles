@@ -39,6 +39,7 @@ binaries=(
     libogg
     libvorbis
     neovim
+    nsq
     parallel
     postgresql
     postgis
