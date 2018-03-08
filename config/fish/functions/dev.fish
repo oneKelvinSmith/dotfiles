@@ -1,4 +1,4 @@
-function workon
+function dev
   if count $argv > /dev/null
     set -l project (ls ~/Code | fzf -f $argv | head -1)
     if test $project
