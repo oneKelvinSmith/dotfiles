@@ -1,5 +1,5 @@
 function fish_prompt
-	set -l last_command_status $status
+  set -l last_command_status $status
   set -l cwd
 
   if test "$theme_short_path" = 'yes'
@@ -8,7 +8,8 @@ function fish_prompt
     set cwd (prompt_pwd)
   end
 
-  set -l fish     "⋊>"
+  set -l dollar   "\$ "
+  set -l fish     ">"
   set -l ahead    "↑"
   set -l behind   "↓"
   set -l diverged "⥄ "
@@ -50,4 +51,10 @@ function fish_prompt
   end
 
   echo -n -s " "
+
+  if test $last_command_status -eq 0
+      echo -e "\n$success_color$dollar$normal_color"
+  else
+      echo -e "\n$error_color$dollar$normal_color"
+  end
 end
