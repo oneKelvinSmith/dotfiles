@@ -22,11 +22,8 @@ set fish_color_user -o A6E22E
 set fish_color_valid_path --underline
 set fish_pager_color_progress 66D9EF
 
-set -gx EDITOR "nvim"
-set -gx COLORTERM "truecolor"
-
-set -gx LANG   "en_US.UTF-8"
-set -gx LC_ALL "en_US.UTF-8"
+set -gx EDITOR    nvim
+set -gx COLORTERM truecolor
 
 source $HOME/.asdf/asdf.fish
 
