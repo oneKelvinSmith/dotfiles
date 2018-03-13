@@ -399,6 +399,8 @@ before packages are loaded."
   (add-to-list 'auto-mode-alist '("\\.tf$" . terraform-mode))
   (add-to-list 'custom-theme-load-path "~/Code/monokai-emacs/")
 
+  (exec-path-from-shell-copy-envs '("GOROOT" "GOPATH"))
+
   (load-theme 'monokai t)
   )
 
