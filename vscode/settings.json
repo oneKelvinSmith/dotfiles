@@ -2,12 +2,16 @@
     "editor.fontFamily": "Fira Code, monospace",
     "editor.fontSize": 14,
     "editor.tabSize": 2,
+    "editor.trimAutoWhitespace": true,
+    "explorer.confirmDelete": false,
     "files.autoSave": "onFocusChange",
-    "telemetry.enableTelemetry": false,
+    "files.trimTrailingWhitespace": true,
+    "gitlens.keymap": "alternate",
+    "go.lintTool": "gometalinter",
     "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
     "workbench.colorTheme": "Monokai",
     "vim.enableNeovim": true,
-    "explorer.confirmDelete": false,
     "vim.disableExtension": false,
     "vim.easymotion": true,
     "vim.leader": "<space>",
@@ -442,7 +446,7 @@
                     "args": []
                 }
             ]
-        },        
+        },
         {
             "before": [
                 "<leader>",
@@ -608,7 +612,35 @@
                     "args": []
                 }
             ]
-        }
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "l"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusNextGroup",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "h"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.focusPreviousGroup",
+                    "args": []
+                }
+            ]
+        },
     ],
     "vim.insertModeKeyBindings": [
         {
@@ -621,5 +653,4 @@
             ]
         }
     ],
-    "gitlens.keymap": "alternate",
 }
