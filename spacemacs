@@ -39,7 +39,6 @@ This function should only modify configuration layer settings."
      emoji
      erlang
      git
-     go
      haskell
      helm
      html
@@ -58,6 +57,9 @@ This function should only modify configuration layer settings."
      version-control
      yaml
      ;; Configured layers
+     (go :variables
+         go-use-gometalinter t
+         gofmt-command "goreturns")
      (ruby :variables
            ruby-test-runner 'rspec
            ruby-enable-enh-ruby-mode nil
