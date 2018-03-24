@@ -33,7 +33,6 @@ modules=(
     js-beautify
     jsonlint
     mocha
-    phantomjs
     react
     react-dom
     react-native-cli
@@ -56,7 +55,11 @@ other=(
     gulp
     ionic
     ios-sim
+    phantomjs
 )
 
-echo "Installing node packages…"
+echo "Installing node packages..."
 npm install -g ${modules[@]}
+
+echo "Reshimming..."
+asdf reshim nodejs
