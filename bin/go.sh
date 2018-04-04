@@ -1,6 +1,6 @@
 #! /bin/sh -x
 
-version=1.9.4
+version=1.10
 
 echo "Installing go..."
 asdf install golang $version
