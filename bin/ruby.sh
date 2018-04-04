@@ -1,6 +1,6 @@
 #! /bin/sh -x
 
-version=2.4.3
+version=2.5.1
 
 echo "Installing ruby..."
 asdf install ruby $version
@@ -12,6 +12,7 @@ gems=(
     pry
     rails
     rubocop
+    rubycritic
     tmuxinator
 )
 
