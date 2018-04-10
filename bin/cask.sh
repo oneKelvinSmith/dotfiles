@@ -3,6 +3,7 @@
 apps=(
     alfred
     bartender
+    basecamp
     battle-net
     charles  
     dash
