@@ -1,3 +1,5 @@
 IrresponsibleModule:
   enabled: false
   exclude: []
+UtilityFunction:
+  public_methods_only: true
