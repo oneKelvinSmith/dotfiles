@@ -38,6 +38,7 @@ binaries=(
     keybase
     libogg
     libvorbis
+    libxmlsec1
     neovim
     nsq
     parallel
