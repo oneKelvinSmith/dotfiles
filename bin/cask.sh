@@ -10,19 +10,16 @@ apps=(
     discord-ptb    
     docker
     dropbox
-    flux
-    gimp
     google-chrome
     intellij-idea-ce
     iterm2   
-    keepassx    
+    java8
     keepingyouawake
     keybase      
     little-snitch   
     micro-snitch     
     minikube  
     ngrok
-    ngrok  
     postman
     skype 
     slack            
@@ -43,8 +40,11 @@ other=(
     elm-platform
     firefox
     firefoxdeveloperedition
+    flux
     fuze
+    gimp
     intel-haxm
+    keepassx    
     launchbar
     libreoffice
     mailbox
