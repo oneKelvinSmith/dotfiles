@@ -1,6 +1,6 @@
 #! /bin/sh -x
 
-version=8.9.4
+version=9.11.1
 
 echo "Installing node..."
 asdf install nodejs $version
@@ -29,10 +29,13 @@ modules=(
     eslint-plugin-promise
     eslint-plugin-react
     eslint-plugin-standard
+    husky 
     jest-cli
     js-beautify
     jsonlint
+    lint-staged 
     mocha
+    prettier
     react
     react-dom
     react-native-cli
