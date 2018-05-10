@@ -2,7 +2,7 @@
 	name = Kelvin Smith
 	email = oneKelvinSmith@gmail.com
 [push]
-	default = simple
+	default = current
 [color]
 	ui = true
 [pull]
