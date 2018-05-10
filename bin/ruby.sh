@@ -13,6 +13,7 @@ gems=(
     rails
     rubocop
     rubycritic
+    solargraph
     tmuxinator
 )
 
