@@ -48,7 +48,6 @@ This function should only modify configuration layer settings."
      markdown
      org
      python
-     react
      rust
      scala
      shell-scripts
@@ -80,7 +79,10 @@ This function should only modify configuration layer settings."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(hcl-mode terraform-mode)
+   dotspacemacs-additional-packages '(dotenv-mode
+                                      hcl-mode
+                                      rjsx-mode
+                                      terraform-mode)
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
@@ -394,15 +396,38 @@ before packages are loaded."
         web-mode-markup-indent-offset 2
         web-mode-scss-indent-offset 2)
 
-  (setq-default flycheck-scalastylerc "~/.config/scala/scalastyle_config.xml")
+  ;; flycheck
+  (setq flycheck-disabled-checkers '(ruby-reek)
+        flycheck-elixir-credo-strict t
+        flycheck-scalastylerc "~/.config/scala/scalastyle_config.xml")
 
-  (define-key winum-keymap (kbd "C-q") 'holy-mode)
-
+  ;; terraform
   (add-to-list 'auto-mode-alist '("\\.tf$" . terraform-mode))
-  (add-to-list 'custom-theme-load-path "~/Code/monokai-emacs/")
 
+  ;; rjsx
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . rjsx-mode))
+  (add-to-list 'auto-mode-alist '("\\.jsx\\'" . rjsx-mode))
+  (add-to-list 'auto-mode-alist '("\\.react.js\\'" . rjsx-mode))
+  (add-to-list 'auto-mode-alist '("\\index.android.js\\'" . rjsx-mode))
+  (add-to-list 'auto-mode-alist '("\\index.ios.js\\'" . rjsx-mode))
+  (add-to-list 'magic-mode-alist '("/\\*\\* @jsx React\\.DOM \\*/" . rjsx-mode))
+  (add-to-list 'magic-mode-alist '("^import React" . rjsx-mode))
+
+  (add-to-list 'flycheck-global-modes "rjsx-mode")
+
+  (with-eval-after-load 'rjsx-mode
+    (define-key rjsx-mode-map "<" nil)
+    (define-key rjsx-mode-map (kbd "C-d") nil)
+    (define-key rjsx-mode-map ">" nil))
+
+  ;; go
   (exec-path-from-shell-copy-envs '("GOROOT" "GOPATH"))
 
+  ;; keymap
+  (define-key winum-keymap (kbd "C-q") 'holy-mode)
+
+  ;; theme
+  (add-to-list 'custom-theme-load-path "~/Code/monokai-emacs/")
   (load-theme 'monokai t)
   )
 
