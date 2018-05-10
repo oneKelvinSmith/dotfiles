@@ -1,17 +1,16 @@
 {
+    "atomKeymap.promptV3Features": true,
     "editor.fontFamily": "Fira Code, monospace",
     "editor.fontSize": 14,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
     "editor.tabSize": 2,
     "editor.trimAutoWhitespace": true,
     "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.openEditors.visible": 9,
     "files.autoSave": "onFocusChange",
     "files.trimTrailingWhitespace": true,
-    "go.lintTool": "gometalinter",
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "workbench.colorTheme": "Monokai",
-    "window.zoomLevel": 0,
-    "terminal.integrated.fontSize": 14,
     "gitlens.codeLens.enabled": false,
     "gitlens.keymap": "chorded",
     "gitlens.advanced.messages": {
@@ -24,14 +23,20 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
-    "workbench.startupEditor": "newUntitledFile",
-    "vim.enableNeovim": true,
+    "go.lintTool": "gometalinter",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontSize": 14,
     "vim.disableExtension": false,
     "vim.easymotion": true,
+    "vim.enableNeovim": true,
     "vim.leader": "<space>",
     "vim.sneak": true,
     "vim.statusBarColorControl": true,
     "vim.surround": true,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Monokai",
+    "workbench.startupEditor": "newUntitledFile",
     "vim.otherModesKeyBindingsNonRecursive": [
         {
             "before": [
@@ -667,7 +672,4 @@
             ]
         }
     ],
-    "[go]": {
-        "editor.tabSize": 8,
-    },
 }
