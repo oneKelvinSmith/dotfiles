@@ -10,6 +10,7 @@ packages=(
   github.com/acroca/go-symbols
   github.com/alecthomas/gometalinter
   github.com/cweill/gotests
+  github.com/davecgh/go-spew/spew
   github.com/davidrjenni/reftools/cmd/fillstruct
   github.com/derekparker/delve/cmd/dlv
   github.com/dominikh/go-tools/cmd/keyify
@@ -36,31 +37,31 @@ packages=(
 )
 
 linters=(
-    github.com/GoASTScanner/gas
-    github.com/alecthomas/gocyclo
-    github.com/alexkohler/nakedret
-    github.com/client9/misspell/cmd/misspell
-    github.com/dnephin/govet
-    github.com/golang/lint/golint
-    github.com/gordonklaus/ineffassign
-    github.com/jgautheron/goconst/cmd/goconst
-    github.com/kisielk/errcheck
-    github.com/mdempsky/maligned
-    github.com/mdempsky/unconvert
-    github.com/mibk/dupl
-    github.com/opennota/check/cmd/structcheck
-    github.com/opennota/check/cmd/varcheck
-    github.com/stripe/safesql
-    github.com/tsenart/deadcode
-    github.com/walle/lll/cmd/lll
-    golang.org/x/tools/cmd/goimports
-    golang.org/x/tools/cmd/gotype
-    honnef.co/go/tools/cmd/gosimple
-    honnef.co/go/tools/cmd/megacheck
-    honnef.co/go/tools/cmd/staticcheck
-    honnef.co/go/tools/cmd/unused
-    mvdan.cc/interfacer
-    mvdan.cc/unparam
+  github.com/GoASTScanner/gas
+  github.com/alecthomas/gocyclo
+  github.com/alexkohler/nakedret
+  github.com/client9/misspell/cmd/misspell
+  github.com/dnephin/govet
+  github.com/golang/lint/golint
+  github.com/gordonklaus/ineffassign
+  github.com/jgautheron/goconst/cmd/goconst
+  github.com/kisielk/errcheck
+  github.com/mdempsky/maligned
+  github.com/mdempsky/unconvert
+  github.com/mibk/dupl
+  github.com/opennota/check/cmd/structcheck
+  github.com/opennota/check/cmd/varcheck
+  github.com/stripe/safesql
+  github.com/tsenart/deadcode
+  github.com/walle/lll/cmd/lll
+  golang.org/x/tools/cmd/goimports
+  golang.org/x/tools/cmd/gotype
+  honnef.co/go/tools/cmd/gosimple
+  honnef.co/go/tools/cmd/megacheck
+  honnef.co/go/tools/cmd/staticcheck
+  honnef.co/go/tools/cmd/unused
+  mvdan.cc/interfacer
+  mvdan.cc/unparam
 )
 
 echo "Installing packages..."
