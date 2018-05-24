@@ -32,6 +32,7 @@
     "vim.enableNeovim": true,
     "vim.leader": "<space>",
     "vim.sneak": true,
+    "vim.useSystemClipboard": true,
     "vim.statusBarColorControl": true,
     "vim.surround": true,
     "window.zoomLevel": 0,
@@ -672,4 +673,5 @@
             ]
         }
     ],
+    "gitlens.historyExplorer.enabled": true,
 }
