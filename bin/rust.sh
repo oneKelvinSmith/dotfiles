@@ -1,6 +1,6 @@
-#! /bin/sh -x
+#! /bin/bash -x
 
-if ! test -x $(command -v rustup); then
+if ! test -x "$(command -v rustup)"; then
   echo "Installing rust..."
   curl https://sh.rustup.rs -sSf | sh
 fi
