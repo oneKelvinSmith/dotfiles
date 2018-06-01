@@ -35,7 +35,6 @@ binaries=(
     imagemagick
     ispell
     kafka
-    keybase
     libogg
     libvorbis
     libxmlsec1
@@ -80,7 +79,4 @@ brew install gnu-sed --with-default-names
 # Install emacs with its peculiarities
 #
 # GNU Emacs
-brew install emacs --with-gnutls --with-librsvg --with-imagemagick@6 --with-cocoa
-
-# Link brew applications
-brew linkapps
+brew install emacs --with-gnutls --with-librsvg --with-imagemagick --with-cocoa
