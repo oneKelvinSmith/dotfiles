@@ -3,13 +3,13 @@
 apps=(
     alfred
     bartender
-    basecamp
     battle-net
     charles  
     dash
     discord-ptb    
     docker
     dropbox
+    firefox
     google-chrome
     intellij-idea-ce
     iterm2   
@@ -25,9 +25,9 @@ apps=(
     slack            
     spectacle
     steam
-    trailer
     tunnelbear
     visual-studio-code
+    zeplin
     zoomus
 )
 
@@ -36,6 +36,7 @@ other=(
     adobe-reader
     android-studio
     atom
+    basecamp
     chefdk
     elm-platform
     firefox
@@ -53,6 +54,7 @@ other=(
     spotify
     sublime-text3
     textmate
+    trailer
     unity
     vagrant
     virtualbox
