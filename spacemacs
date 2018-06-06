@@ -118,7 +118,7 @@ It should only modify the values of Spacemacs settings."
    ;; when the current branch is not `develop'. Note that checking for
    ;; new versions works via git commands, thus it calls GitHub services
    ;; whenever you start Emacs. (default nil)
-   dotspacemacs-check-for-update t
+   dotspacemacs-check-for-update nil
    ;; If non-nil, a form that evaluates to a package directory. For example, to
    ;; use different package directories for different Emacs versions, set this
    ;; to `emacs-version'. (default nil)
@@ -138,7 +138,7 @@ It should only modify the values of Spacemacs settings."
    ;; directory. A string value must be a path to an image format supported
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed. (default 'official)
-   dotspacemacs-startup-banner 'official
+   dotspacemacs-startup-banner 998
    ;; List of items to show in startup buffer or an association list of
    ;; the form `(list-type . list-size)`. If nil then it is disabled.
    ;; Possible values for list-type are:
@@ -154,7 +154,8 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(monokai
+   dotspacemacs-themes '(gruvbox
+                         monokai
                          spacemacs-dark
                          spacemacs-light)
    ;; If non-nil the cursor color matches the state color in GUI Emacs.
@@ -164,9 +165,9 @@ It should only modify the values of Spacemacs settings."
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("Fira Code"
                                :size 14
+                               :height 1
                                :weight normal
-                               :width normal
-                               :powerline-scale 1.1)
+                               :width normal)
    ;; The leader key (default "SPC")
    dotspacemacs-leader-key "SPC"
    ;; The key used for Emacs commands `M-x' (after pressing on the leader key).
@@ -257,7 +258,7 @@ It should only modify the values of Spacemacs settings."
    ;; If non-nil a progress bar is displayed when spacemacs is loading. This
    ;; may increase the boot time on some systems and emacs builds, set it to
    ;; nil to boost the loading time. (default t)
-   dotspacemacs-loading-progress-bar t
+   dotspacemacs-loading-progress-bar nil
    ;; If non-nil the frame is fullscreen when Emacs starts up. (default nil)
    ;; (Emacs 24.4+ only)
    dotspacemacs-fullscreen-at-startup nil
@@ -302,7 +303,7 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-line-numbers t
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
-   dotspacemacs-folding-method 'evil
+   dotspacemacs-folding-method 'origami
    ;; If non-nil `smartparens-strict-mode' will be enabled in programming modes.
    ;; (default nil)
    dotspacemacs-smartparens-strict-mode nil
@@ -384,7 +385,6 @@ before packages are loaded."
         js2-indent-switch-body t
         js2-mode-show-strict-warnings nil
         neo-theme 'ascii
-        powerline-default-separator 'utf-8
         projectile-enable-caching t
         ruby-insert-encoding-magic-comment nil
         terraform-indent-level 2
@@ -395,6 +395,9 @@ before packages are loaded."
         web-mode-indent-style 2
         web-mode-markup-indent-offset 2
         web-mode-scss-indent-offset 2)
+
+  ;; mode-line
+  (setq dotspacemacs-mode-line-theme '(spacemacs :separator 'arrow))
 
   ;; flycheck
   (setq flycheck-disabled-checkers '(ruby-reek)
@@ -425,10 +428,6 @@ before packages are loaded."
 
   ;; keymap
   (define-key winum-keymap (kbd "C-q") 'holy-mode)
-
-  ;; theme
-  (add-to-list 'custom-theme-load-path "~/Code/monokai-emacs/")
-  (load-theme 'monokai t)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
