@@ -37,7 +37,7 @@
     "vim.statusBarColorControl": true,
     "vim.surround": true,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Gruvbox Dark (Medium)",
     "workbench.startupEditor": "newUntitledFile",
     "vim.otherModesKeyBindingsNonRecursive": [
         {
@@ -674,4 +674,9 @@
             ]
         }
     ],
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#32302f",
+        "statusBar.noFolderBackground": "#1d2021",
+        "statusBar.debuggingBackground": "#d65d0e"
+    }
 }
