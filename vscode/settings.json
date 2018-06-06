@@ -1,8 +1,8 @@
 {
-    "atomKeymap.promptV3Features": true,
     "editor.fontFamily": "Fira Code, monospace",
     "editor.fontSize": 14,
     "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.tabSize": 2,
     "editor.trimAutoWhitespace": true,
@@ -11,8 +11,6 @@
     "explorer.openEditors.visible": 9,
     "files.autoSave": "onFocusChange",
     "files.trimTrailingWhitespace": true,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.keymap": "chorded",
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -23,6 +21,9 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
+    "gitlens.codeLens.enabled": false,
+    "gitlens.keymap": "chorded",
+    "gitlens.historyExplorer.enabled": true,
     "go.lintTool": "gometalinter",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -673,5 +674,4 @@
             ]
         }
     ],
-    "gitlens.historyExplorer.enabled": true,
 }
