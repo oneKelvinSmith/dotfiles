@@ -29,6 +29,7 @@ binaries=(
     git
     gnutls
     gpg
+    google-cloud-sdk
     heroku
     htop
     hub
@@ -51,6 +52,7 @@ binaries=(
     reattach-to-user-namespace
     redis
     rename
+    ripgrep
     ruby-build
     sbt
     sdl2
@@ -75,6 +77,9 @@ brew install ${binaries[@]}
 
 # Install gnu sed to replace osx sed
 brew install gnu-sed --with-default-names
+
+# Install yarn
+brew install yarn --without-node
 
 # Install emacs with its peculiarities
 #
