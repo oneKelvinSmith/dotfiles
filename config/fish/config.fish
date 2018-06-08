@@ -30,9 +30,11 @@ source $HOME/.asdf/asdf.fish
 set -gx CARGOPATH $HOME/.cargo
 set -gx GOPATH    $HOME/.go
 set -gx GOROOT    (go env GOROOT)
+set -gx YARNPATH  (yarn global dir)/node_modules/
 
 set -g fish_user_paths $CARGOPATH/bin  $fish_user_paths
 set -g fish_user_paths $GOPATH/bin     $fish_user_paths
 set -g fish_user_paths $GOROOT/bin     $fish_user_paths
+set -g fish_user_paths $YARNPATH/.bin  $fish_user_paths
 set -g fish_user_paths $HOME/.bin      $fish_user_paths
 set -g fish_user_paths /usr/local/sbin $fish_user_paths
