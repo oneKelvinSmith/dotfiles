@@ -17,6 +17,7 @@ binaries=(
     awscli
     axel
     bash
+    clojure
     coreutils
     ctags
     exercism
@@ -36,6 +37,7 @@ binaries=(
     imagemagick
     ispell
     kafka
+    leiningen
     libogg
     libvorbis
     libxmlsec1
@@ -54,7 +56,6 @@ binaries=(
     rename
     ripgrep
     ruby-build
-    sbt
     sdl2
     sshuttle
     the_silver_searcher
