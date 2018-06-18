@@ -25,6 +25,10 @@
     "gitlens.keymap": "chorded",
     "gitlens.historyExplorer.enabled": true,
     "go.lintTool": "gometalinter",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.arrowParens": "always",
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.fontSize": 14,
@@ -662,6 +666,30 @@
                 }
             ]
         },
+        {
+            "before": [
+                "u"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "undo",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-r>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "redo",
+                    "args": []
+                }
+            ]
+        }
     ],
     "vim.insertModeKeyBindings": [
         {
@@ -678,5 +706,10 @@
         "statusBar.background": "#32302f",
         "statusBar.noFolderBackground": "#1d2021",
         "statusBar.debuggingBackground": "#d65d0e"
-    }
+    },
+    "[graphql]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": true
+    },
 }
