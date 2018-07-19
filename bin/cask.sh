@@ -14,6 +14,7 @@ apps=(
     intellij-idea-ce
     iterm2   
     java8
+    kap
     keepingyouawake
     keybase      
     little-snitch   
