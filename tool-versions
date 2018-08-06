@@ -1,6 +1,6 @@
-elixir 1.6.5
+elixir 1.7.1-otp-21
 elm 0.18.0
-erlang 20.3.8
+erlang 21.0.4
 nodejs 8.9.4
 ruby 2.4.1
 rust 1.17.0
