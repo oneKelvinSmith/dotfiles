@@ -21,6 +21,7 @@ apps=(
     micro-snitch     
     minikube  
     ngrok
+    postico
     postman
     skype 
     slack            
