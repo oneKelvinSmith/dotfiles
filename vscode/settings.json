@@ -693,6 +693,12 @@
       "after": ["<Esc>"]
     }
   ],
+  "vim.statusBarColors.insert": "#d65d0e",
+  "vim.statusBarColors.normal": "#3c3836",
+  "vim.statusBarColors.replace": "#d79921",
+  "vim.statusBarColors.visual": "#458588",
+  "vim.statusBarColors.visualblock": "#98971a",
+  "vim.statusBarColors.visualline": "#689d6a",
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Gruvbox Dark (Medium)",
   "workbench.startupEditor": "newUntitledFile",
