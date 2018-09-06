@@ -21,6 +21,7 @@ asdf plugin-add golang  https://github.com/kennyp/asdf-golang
 asdf plugin-add haskell https://github.com/vic/asdf-haskell
 asdf plugin-add lfe     https://github.com/vic/asdf-lfe
 asdf plugin-add nodejs  https://github.com/asdf-vm/asdf-nodejs
+asdf plugin-add python  https://github.com/tuvistavie/asdf-python
 asdf plugin-add ruby    https://github.com/asdf-vm/asdf-ruby
 
 asdf plugin-update --all
