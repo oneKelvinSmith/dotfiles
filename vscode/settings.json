@@ -1,4 +1,16 @@
 {
+  "bracketPairColorizer.consecutivePairColors": [
+    "()",
+    "[]",
+    "{}",
+    ["#8ec07c", "#d79921", "#83a598"],
+    "#fb4934"
+  ],
+  "bracketPairColorizer.independentPairColors": [
+    ["()", ["#8ec07c", "#d79921", "#83a598"], "#fb4934"],
+    ["[]", ["#8ec07c", "#d79921", "#83a598"], "#fb4934"],
+    ["{}", ["#8ec07c", "#d79921", "#83a598"], "#fb4934"]
+  ],
   "editor.fontFamily": "Fira Code, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
