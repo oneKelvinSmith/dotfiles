@@ -3,71 +3,67 @@
 apps=(
     alfred
     bartender
-    battle-net
-    charles  
-    dash
-    discord-ptb    
     docker
     dropbox
     firefox
     google-chrome
-    intellij-idea-ce
+    insomnia
     iterm2   
-    java8
+    java
     kap
     keepingyouawake
-    keybase      
     little-snitch   
     micro-snitch     
-    minikube  
     ngrok
     postico
-    postman
-    skype 
     slack            
     spectacle
-    steam
-    tunnelbear
     visual-studio-code
-    zeplin
-    zoomus
 )
 
 other=(
     1password
+    1password-cli
     adobe-reader
     android-studio
     atom
     basecamp
+    battle-net
+    charles  
     chefdk
-    elm-platform
-    firefox
+    chromedriver
+    dash
+    discord-ptb    
     firefoxdeveloperedition
     flux
+    franz
     fuze
     gimp
-    intel-haxm
+    intellij-idea-ce
     keepassx    
-    launchbar
-    libreoffice
-    mailbox
+    keybase      
+    minikube  
+    opera
+    operadriver
+    postman
     rubymine
+    skitch
+    skype 
     sonic-pi
     spotify
+    steam
+    studio-3t
+    sublime-text
     sublime-text3
     textmate
     trailer
+    tunnelbear
     unity
     vagrant
     virtualbox
-)
-
-mac_store=(
-    xcode
-    evernote
-    wunderlist
-    dash
-    pocket
+    virtualbox-extension-pack
+    zeplin
+    zoomus
 )
 
 # Install apps to /Applications

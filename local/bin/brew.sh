@@ -7,9 +7,6 @@ fi
 
 brew update
 
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew tap neovim/neovim
 brew tap thoughtbot/formulae
 brew tap puma/puma
 
@@ -17,7 +14,6 @@ binaries=(
     awscli
     axel
     bash
-    clojure
     coreutils
     ctags
     exercism
@@ -25,29 +21,23 @@ binaries=(
     findutils
     fish
     fzf
-    gifsicle
     gettext
     git
     gnutls
+    gnu-sed
     gpg
-    google-cloud-sdk
-    heroku
     htop
     hub
     imagemagick
     ispell
-    kafka
-    leiningen
     libogg
     libvorbis
     libxmlsec1
     neovim
-    nsq
     parallel
     postgresql
     postgis
     puma-dev
-    qt5
     rabbitmq
     rcm
     readline
@@ -63,26 +53,27 @@ binaries=(
     thrift
     tig
     tldr
-    tmate
-    tmux
     tree
     watch
     watchman
     wemux
     wget
+)
+
+other=(
+    clojure
+    emacs
+    gifsicle
+    heroku
+    kafka
+    leiningen
+    nsq
+    qt5
+    tmate
+    tmux
+    yarn
     zsh
 )
 
 echo "installing binaries…"
 brew install ${binaries[@]}
-
-# Install gnu sed to replace osx sed
-brew install gnu-sed --with-default-names
-
-# Install yarn
-brew install yarn --without-node
-
-# Install emacs with its peculiarities
-#
-# GNU Emacs
-brew install emacs --with-gnutls --with-librsvg --with-imagemagick --with-cocoa

@@ -1,2 +1,1 @@
-SYMLINK_DIRS="oh-my-zsh"
 EXCLUDES="README.md * install.md"

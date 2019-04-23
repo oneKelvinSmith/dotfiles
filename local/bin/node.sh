@@ -1,13 +1,15 @@
 #! /bin/sh -x
 
-version=9.11.1
+version=11.14.0
 
 echo "Installing node..."
 asdf install nodejs $version
 asdf global nodejs $version
 
+echo "Importing release team keyring..."
+bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
+
 modules=(
-    babel-brunch
     babel-core
     babel-eslint
     babel-loader
@@ -15,15 +17,12 @@ modules=(
     babel-preset-latest
     babel-preset-react
     babel-register
-    brunch
-    elm-brunch
-    elm-oracle
+    create-react-app
     eslint
     eslint babel-eslint
     eslint-config-standard
     eslint-config-standard-jsx
     eslint-config-standard-react
-    eslint-plugin-flowtype
     eslint-plugin-import
     eslint-plugin-jsx-a11y
     eslint-plugin-promise
@@ -33,12 +32,9 @@ modules=(
     jest-cli
     js-beautify
     jsonlint
-    lint-staged 
-    mocha
     prettier
     react
     react-dom
-    react-native-cli
     react-redux
     redux
     standard
@@ -48,21 +44,31 @@ modules=(
 
 other=(
     angular
+    babel-brunch
     bower
+    brunch
     cordova
-    create-react-app
+    elm-brunch
+    elm-oracle
     ember-cli
+    eslint
     eslint-config-airbnb
     eslint-config-ember
+    eslint-plugin-flowtype
     grunt-cli
     gulp
     ionic
     ios-sim
+    mocha
     phantomjs
+    react-native-cli
 )
 
+echo "Installing yarn"
+npm install -g yarn
+
 echo "Installing node packages..."
-npm install -g ${modules[@]}
+yarn global add -g ${modules[@]}
 
 echo "Reshimming..."
 asdf reshim nodejs
