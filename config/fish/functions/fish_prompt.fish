@@ -9,7 +9,7 @@ function fish_prompt
   end
 
   set -l dollar   "\$ "
-  set -l fish     ">"
+  set -l chevron  ">"
   set -l ahead    "↑"
   set -l behind   "↓"
   set -l diverged "⥄ "
@@ -23,9 +23,9 @@ function fish_prompt
   set -l repository_color (set_color $fish_color_cwd ^/dev/null; or set_color green)
 
   if test $last_command_status -eq 0
-    echo -n -s $success_color $fish $normal_color
+    echo -n -s $success_color $chevron $normal_color
   else
-    echo -n -s $error_color $fish $normal_color
+    echo -n -s $error_color $chevron $normal_color
   end
 
   if git_is_repo
