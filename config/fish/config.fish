@@ -25,7 +25,7 @@ set fish_pager_color_progress fe8019
 set -gx EDITOR    nvim
 set -gx COLORTERM truecolor
 
-source $HOME/.asdf/asdf.fish
+source (brew --prefix asdf)/asdf.fish
 
 set -gx CARGOPATH $HOME/.cargo
 set -gx GOPATH    $HOME/.go
