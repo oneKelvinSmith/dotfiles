@@ -1,8 +1,13 @@
 #! /bin/sh -x
 
-version=2.5.1
+version=2.6.1
 
-echo "Installing ruby..."
+if ! test -x "$(command -v asdf)"; then
+  bash ~/.local/bin/asdf.sh
+fi
+
+
+echo "[Installing ruby...]"
 asdf install ruby $version
 asdf global ruby $version
 
@@ -14,8 +19,7 @@ gems=(
     rubocop
     rubycritic
     solargraph
-    tmuxinator
 )
 
-echo "Installing gems..."
+echo "[Installing gems...]"
 gem install ${gems[@]}

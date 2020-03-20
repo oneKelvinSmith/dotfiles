@@ -2,7 +2,7 @@
 
 version=1.10
 
-echo "Installing go..."
+echo "[Installing go...]"
 asdf install golang $version
 asdf global golang $version
 
