@@ -1,5 +1,0 @@
-#! /bin/sh
-
-if [ ! -e $HOME/.SpaceVim.d ]; then
-  curl -sLf https://spacevim.org/install.sh | bash
-fi
