@@ -1,3 +1,3 @@
 function tree
-  command tree -L 2 $argv
+  command tree -C -L 2 $argv
 end
