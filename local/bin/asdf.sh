@@ -1,11 +1,12 @@
-#! /bin/sh -x
+#! /usr/bin/env sh -x
 
 if test ! -e $HOME/.asdf; then
   echo "[Installing asdf...]"
-  brew install asdf
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+  cd ~/.asdf
+  git checkout "$(git describe --abbrev=0 --tags)"
+  cd -
 fi
-
-asdf_cmd=$(brew --prefix asdf)/bin/asdf
 
 echo "[Installing asdf language plugins...]"
 plugins=(
@@ -17,7 +18,7 @@ plugins=(
 )
 for plugin in ${plugins[@]}
 do
-  $asdf_cmd plugin-add ${plugin}
+  asdf plugin-add ${plugin}
 done
 
 echo "[Updating asdf language plugins...]"
