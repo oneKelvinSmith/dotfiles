@@ -10,7 +10,6 @@ fi
 
 echo "[Installing asdf language plugins...]"
 plugins=(
-  golang
   nodejs
   python
   ruby
