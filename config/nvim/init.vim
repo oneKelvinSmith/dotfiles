@@ -12,9 +12,13 @@ Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
+
+Plug 'dag/vim-fish'
  
 call plug#end()
 
 set background=dark
 set termguicolors
 colorscheme dracula
+
+let mapleader = "\<SPACE>"
