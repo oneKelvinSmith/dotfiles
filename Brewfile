@@ -31,34 +31,56 @@ brew "findutils"
 brew "fish"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Automatic updates of GeoIP2 and GeoIP Legacy databases
+brew "geoipupdate"
 # Distributed revision control system
 brew "git"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# The Kubernetes package manager
+brew "helm@2", link: true
 # Improved top (interactive process viewer)
 brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
 # Add GitHub support to git on the command-line
 brew "hub"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # International Ispell
 brew "ispell"
+# Istio configuration command-line utility
+brew "istioctl"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Interactive environments for writing and running code
+brew "jupyterlab"
+# Build tool for Clojure
+brew "leiningen"
 # XML security library
 brew "libxmlsec1"
-# High-performance, schema-free, document-oriented database
-brew "mongodb"
+# Run a Kubernetes cluster locally
+brew "minikube"
+# Open source relational database management system
+brew "mysql"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Manage multiple NodeJS versions
+brew "nodenv"
 # Shell command parallelization utility
 brew "parallel"
+# Python dependency management tool
+brew "pipenv"
 # Object-relational database system
-brew "postgresql"
-# Adds support for geographic objects to PostgreSQL
-brew "postgis"
+brew "postgresql", restart_service: true
 # Messaging broker
-brew "rabbitmq"
+brew "rabbitmq", restart_service: true
+# Install various Ruby versions and implementations
+brew "ruby-build"
+# Ruby version manager
+brew "rbenv"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
 # Persistent key-value database, with built-in net interface

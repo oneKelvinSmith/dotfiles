@@ -3,7 +3,17 @@ set fish_greeting ""
 set -gx EDITOR    nvim
 set -gx COLORTERM truecolor
 
-set -gx PATH $HOME/.local/bin   $PATH
-set -gx PATH /usr/local/sbin    $PATH
-set -gx PATH /usr/local/opt/mongodb-community@3.4/bin $PATH
+if not set -q fish_user_paths
+  # unset the universal variable with:
+  # set -Ue fish_user_paths
+
+  set -Uxp fish_user_paths /usr/local/bin
+  set -Uxp fish_user_paths /usr/local/sbin
+  set -Uxp fish_user_paths /usr/local/opt/mongodb-community@3.4/bin
+end
+
+set -p PATH $HOME/.cargo/bin
+set -p PATH $HOME/.local/bin 
+set -p PATH $HOME/.nodenv/shims
+set -p PATH $HOME/.rbenv/shims
 
