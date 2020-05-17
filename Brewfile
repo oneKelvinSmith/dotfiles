@@ -1,9 +1,9 @@
-tap "caskroom/cask"
-tap "caskroom/versions"
+tap "adoptopenjdk/openjdk"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "mongodb/brew"
 tap "neovim/neovim"
 tap "puma/puma"
 tap "thoughtbot/formulae"
@@ -17,12 +17,22 @@ brew "gettext"
 brew "axel"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
+# TAP-compliant test framework for Bash scripts
+brew "bats"
+# Enables you to reproduce the CircleCI environment locally
+brew "circleci"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Reimplementation of ctags(1)
 brew "ctags"
 # Command-line tool to interact with exercism.io
 brew "exercism"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
+# Interpreted, interactive, object-oriented programming language
+brew "python"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Collection of GNU find, xargs, and locate
@@ -89,12 +99,14 @@ brew "redis", restart_service: true
 brew "rename"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
-# Install various Ruby versions and implementations
-brew "ruby-build"
 # Proxy server that works as a poor man's VPN
 brew "sshuttle"
-# Tool to build, change, and version infrastructure
-brew "terraform"
+# Tail multiple Kubernetes pods & their containers
+brew "stern"
+# User interface to the TELNET protocol
+brew "telnet"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
 # Code-search similar to ack
 brew "the_silver_searcher"
 # Framework for scalable cross-language services development
@@ -105,6 +117,10 @@ brew "tig"
 brew "tldr"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Google's JavaScript engine
+brew "v8"
+# Google's open source JavaScript engine
+brew "v8@3.15"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Watch files and take action when they change
@@ -113,28 +129,49 @@ brew "watchman"
 brew "wemux"
 # Internet file retriever
 brew "wget"
+# High-performance, schema-free, document-oriented database
+brew "mongodb/brew/mongodb-community"
+# High-performance, schema-free, document-oriented database
+brew "mongodb/brew/mongodb-community@3.4"
 # A tool to manage rack apps in development with puma
 brew "puma/puma/puma-dev"
 # management suite for dotfiles
 brew "thoughtbot/formulae/rcm"
+cask "adoptopenjdk11"
+cask "adoptopenjdk14"
+cask "airtame"
 cask "alfred"
 cask "bartender"
+cask "charles"
+cask "clion"
+cask "datagrip"
 cask "docker"
 cask "dropbox"
+cask "emacs"
 cask "firefox"
+cask "gog-galaxy"
+cask "goland"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "insomnia"
 cask "iterm2"
-cask "java"
 cask "kap"
 cask "keepingyouawake"
 cask "little-snitch"
 cask "micro-snitch"
+cask "mongodb-compass"
 cask "ngrok"
 cask "postico"
+cask "private-internet-access"
+cask "pycharm"
+cask "rubymine"
+cask "skype"
 cask "slack"
 cask "spectacle"
+cask "spotify"
+cask "tuple"
+cask "use-engine"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "webstorm"
+cask "zoomus"
