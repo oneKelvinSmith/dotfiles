@@ -1,2 +1,7 @@
+set commentary
+set easymotion
 set surround
 set clipboard+=ideaput
+
+let mapleader ="\<Space>"
+
